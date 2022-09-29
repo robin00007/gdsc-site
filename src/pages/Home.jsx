@@ -5,6 +5,7 @@ import logo from "../assets/logo.svg";
 import rocketCloud from "../assets/rocket+cloud.svg";
 import data from "../data/Home.jsx";
 import Homes from "../components/Homes";
+import Posts from "../assets/post.png";
 function Home() {
   const [discription, setDiscription] = React.useState({
     dis: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dicta, vel perferendis qui ullam dolorum, odio doloremque sed tempora sint amet quae ipsa, alias hic! In quo modi voluptates, quas magni quis voluptatibus adipisci non obcaecati velit iure, veritatis reprehenderit!",
@@ -43,6 +44,33 @@ function Home() {
       status: "completed",
       endDate: "12/12/2020",
       domain: "Web Development",
+    },
+  ]);
+  const [posts, setPosts] = React.useState([
+    {
+      postUrl: "www.google.com",
+      caption: "fdfdsfsdf",
+      imageUrl: Posts,
+    },
+    {
+      postUrl: "www.google.com",
+      caption: "fdfdsfsdf",
+      imageUrl: Posts,
+    },
+    {
+      postUrl: "www.google.com",
+      caption: "fdfdsfsdf",
+      imageUrl: Posts,
+    },
+    {
+      postUrl: "www.google.com",
+      caption: "fdfdsfsdf",
+      imageUrl: Posts,
+    },
+    {
+      postUrl: "www.google.com",
+      caption: "fdfdsfsdf",
+      imageUrl: Posts,
     },
   ]);
 
@@ -109,6 +137,35 @@ function Home() {
                 <div className="card-footer">
                   <p className="project-domain">{project.domain}</p>
                   <p>{project.status}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="post-container ">
+        <div className="project-heading">
+          <p>Posts</p>
+          <div className="gh-circles"></div>
+          <div className="ph-circles"></div>
+          <div className="bh-circles"></div>
+          {/* <div className="sgh-circles"></div>
+          <div className="yh-circles"></div> */}
+        </div>
+        <hr />
+        <div className="all-posts-container">
+          {posts.map((post, index) => {
+            return (
+              <div className="post">
+                <div className="post-image-container">
+                  <img src={post.imageUrl} alt="" className="post-imageUrl" />
+                </div>
+                <div className="post-content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Maxime neque natus quia accusantium quae consequatur, odio
+                    asperiores tempore dolorem ullam.
+                  </p>
                 </div>
               </div>
             );
