@@ -16,9 +16,16 @@
   position: relative;
 }
 .heroSvg {
-  background-color: red;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
   width: 50%;
   height: 100%;
+}
+.heroSvg img {
+  /* background-color: red; */
+  width: 80%;
+  /* height: 100%; */
 }
 
 .content-container {
@@ -28,6 +35,7 @@
   position: relative;
   /* background-color: red; */
   height: 20%;
+  padding-right: 50px;
   /* margin-top: 20%; */
 
   /* background-color: green; */
@@ -85,7 +93,7 @@
 
 .button-container {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   margin-top: 15px;
 }
 
@@ -467,13 +475,14 @@
   /* background-color: aqua; */
 }
 .globe-container {
-  height: 800px;
+  height: 500px;
   width: 100%;
   /* background-color: red; */
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  /* background: red; */
 }
 .globe-canvas {
   width: 1000px;
@@ -482,4 +491,34 @@
   /* background-color: yellow; */
   justify-content: center;
   z-index: 10;
+  cursor: grab;
+  /* background: red; */
+}
+.Home-instagram path:nth-child(1) {
+  cursor: pointer;
+  fill: transparent;
+}
+.Home-facebook path:nth-child(1) {
+  fill: transparent;
+  cursor: pointer;
+}
+.Home-github path:nth-child(0) {
+  cursor: pointer;
+
+  fill: transparent;
+}
+.Home-github {
+  /* background-color: yellow; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 5px;
+}
+.Home-instagram {
+  /* background-color: red; */
+}
+
+.Home-linkedIn path:nth-child(1) {
+  fill: transparent;
+  cursor: pointer;
 }

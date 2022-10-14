@@ -8,6 +8,7 @@
   padding: 50px 0px;
   background-color: #17212b;
   color: white;
+  position: relative;
   z-index: 100 !important;
 }
 .footer-content {

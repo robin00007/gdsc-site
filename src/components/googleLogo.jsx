@@ -1,4 +1,4 @@
-import GoogleSvg from "../../public/rive/googleSvg.riv";
+// import GoogleSvg from "../../public/rive/googleSvg.riv";
 
 import Rive from "@rive-app/react-canvas";
 
