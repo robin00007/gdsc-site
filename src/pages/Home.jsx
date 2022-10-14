@@ -7,6 +7,11 @@ import data from "../data/Home.jsx";
 import Homes from "../components/Homes";
 import Posts from "../assets/post.png";
 import Rive from "rive-react";
+import heroSvg from "../assets/homePageSvg.svg";
+import { ReactComponent as Facebook } from "../assets/facebook.svg";
+import { ReactComponent as Instagram } from "../assets/instagram.svg";
+import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
+import { ReactComponent as Github } from "../assets/github.svg";
 // import { GoogleLogo } from "../components";
 import Globe from "globe.gl";
 
@@ -93,6 +98,12 @@ function Home() {
   const cards = data.map((item) => {
     return <Homes {...item} />;
   });
+  const links = {
+    instagram: "#",
+    facebook: "#",
+    github: "#",
+    linkedIn: "#",
+  };
 
   return (
     <div>
@@ -115,14 +126,35 @@ function Home() {
                 css={{ background: "#C4C4C4", color: "black" }}
               />
             </div>
+            <div className="social-links">
+              {/* <a href={links.facebook}>
+                <img src={facebook} alt="link" />
+              </a>
+              <a href={links.linkedIn}>
+                <img src={linkedIn} alt="link" />
+              </a>
+              <a href={links.github}>
+                <img src={github} alt="link" />
+              </a>
+              <a href={links.instagram}>
+                <img src={instagram} alt="link" />
+              </a> */}
+              {/* className="Home-instagram" */}
+              <Facebook className="Home-facebook" height="48" />
 
-            <div className="g-circles"></div>
+              <Instagram className="Home-instagram" height="48" />
+              <Github className="Home-github" fill="transparent" height="48" />
+              <LinkedIn className="Home-linkedIn" height="48" />
+            </div>
+
+            {/* <div className="g-circles"></div>
             <div className="p-circles"></div>
-            <div className="b-circles"></div>
+            <div className="b-circles"></div> */}
           </div>
-          {/* <div className="heroSvg">
-            <GoogleLogo />
-          </div> */}
+          <div className="heroSvg">
+            {/* <GoogleLogo /> */}
+            <img src={heroSvg} alt="" />
+          </div>
         </div>
 
         {/* <img className="rocketCloudImg" src={rocketCloud} /> */}
