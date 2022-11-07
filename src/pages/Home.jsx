@@ -164,7 +164,7 @@ function Home() {
         <div className="container-2">
           <div className="title-container">
             <img src={logo} />
-            <p className="gdsc-title">Google Developer Student Clubs</p>
+            <p className="gdsc-title">Google Developer Student Club</p>
           </div>
           <p className="about-tech">{discription.about}</p>
           <p className="technologies">Technologies</p>
