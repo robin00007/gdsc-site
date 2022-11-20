@@ -1,10 +1,10 @@
 import React from 'react'
 import "../styles/components/teamGrids.css"
 // import { BrowserRouter as Router, Link } from 'react-router-dom';
-import linkedIn from '../assets/linkedIn.svg';
-import GitHub from '../assets/github.svg';
-import insta from '../assets/instagram.svg';
-import facebook from '../assets/facebook.svg';
+import linkedIn from '../assets/LINKEDIN2.svg';
+import GitHub from '../assets/GITHUB2.svg';
+import insta from '../assets/INSTAGRAM2.svg';
+import facebook from '../assets/FACEBOOK2.svg';
 // import { ReactComponent as GitHub } from '../assets/linkedIn.svg';
 
 function TeamGrids(props) {

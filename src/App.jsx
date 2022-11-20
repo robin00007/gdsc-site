@@ -9,14 +9,14 @@ import {
   Schedule,
   Team,
 } from "./pages/";
-import { Footer, Navbar } from "./components/";
+import { Footer, Navbar, MobileNavabar} from "./components/";
 import "./styles/Global.css";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar />        
         <div>
           <Routes>
             <Route path="/" element={<Home />}></Route>
@@ -26,6 +26,7 @@ function App() {
             <Route path="/projects" element={<Projects />}></Route>
             <Route path="/schedule" element={<Schedule />}></Route>
             <Route path="/team" element={<Team />}></Route>
+            <Route path="/Mobile" element={<MobileNavabar />}></Route>
           </Routes>
         </div>
         <Footer />
