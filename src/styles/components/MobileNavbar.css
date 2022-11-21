@@ -20,10 +20,11 @@
 {
 .HomeButton{
     position: fixed;
-    top:150px;
-    left:290px;
+    /* top:150px; */
+    right: 0px;
     z-index: 250;
     display: flex;
+    bottom: 0px;
     flex-direction: column;
     align-items: center;
 }
