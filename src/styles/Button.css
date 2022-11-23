@@ -14,3 +14,15 @@
   color: white !important;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px){
+  .btn{
+    font-size: 12px;
+  }
+}
