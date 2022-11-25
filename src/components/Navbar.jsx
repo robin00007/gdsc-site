@@ -18,7 +18,7 @@ export default function Navbar() {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1000px)'
   })
-  const [showIcons, setShowIcons] = useState(0);
+  const [showIcons, setShowIcons] = useState(false);
   return (
     <div>
       {isDesktopOrLaptop ? <div className="navbar-container">

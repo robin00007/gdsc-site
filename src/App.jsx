@@ -9,14 +9,15 @@ import {
   Schedule,
   Team,
 } from "./pages/";
-import { Footer, Navbar, MobileNavabar} from "./components/";
+import { Footer, Navbar, MobileNavabar,ToggleButtons} from "./components/";
 import "./styles/Global.css";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />        
+        <Navbar /> 
+        <ToggleButtons/>       
         <div>
           <Routes>
             <Route path="/" element={<Home />}></Route>
