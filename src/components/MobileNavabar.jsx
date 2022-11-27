@@ -7,7 +7,7 @@ import Project from "../assets/navbar/Project.svg"
 import downarrow from "../assets/navbar/downarrow.svg"
 import "../styles/components/MobileNavbar.css"
 
-function MobileNavabar() {
+function MobileNavabar(props) {
     const [showIcons, setShowIcons] = useState(0);
     return (
         <div className='HomeButton'>
@@ -15,7 +15,9 @@ function MobileNavabar() {
                 {showIcons &&
                     <div className='Navigation-button'>
                         <button className='NavButtonIcon' onClick={() => { setShowIcons(!showIcons) }}>
-                            <img src={downarrow} alt="" height="40px" width="20px" />
+                            {
+                            `${props.theme}`=== `dark` ? <img src={downarrow} alt="" height="40px" width="20px" />:<img src={Team} alt="" height="40px" />
+                            }
                         </button>
                         <button className='NavButtonIcon'>
                             <a href="/team" rel="noreferrer">
