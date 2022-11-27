@@ -52,18 +52,16 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
 }));
 
-export default function ToggleButtons() {
-    const [checked, setChecked] = useState(false)
-    console.log({checked})
-    const handleChange = (event) => {
-        // setChecked(event.target.checked)
-        setChecked(!checked)
-
-    }
+export default function ToggleButtons(props) {
+    // const [checked, setChecked] = useState(false)
+    // console.log({checked})
+    // const handleChange = () => {
+    //     setChecked(!checked)
+    // }
     return (
         <FormGroup>
             <FormControlLabel className="toggle-btn"
-                control={<MaterialUISwitch sx={{ m: 1 }} checked={checked} onChange={handleChange} />}
+                control={<MaterialUISwitch sx={{ m: 1 }} checked={props.checked} onChange={props.onChange} />}
             />
         </FormGroup>
     );

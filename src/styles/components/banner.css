@@ -33,18 +33,27 @@
     justify-content: space-evenly;
 }
 
-.bannerHeading{
+.bannerHeading h1{
     padding: 16px;
     height: 50%;
+    color:#6199F6
 }
+#dark .bannerHeading h1{
+    color: #FAF5F5;
+}
+
 .bannerHeading h1{
     font-size: 8vh;
-    color: #81C995;
+    color:#6199F6
 }
 
 .bannerSubText{
     height:50%;
     padding:48px 16px;
+    color: #4285F4;
+}
+#dark .bannerSubText {
+    color: #FAF5F5 ;
 }
 .bannerSubText span{
     color:grey;
@@ -66,7 +75,7 @@
     }
     .bannerHeading h1{
         font-size: 6vh;
-        color: #81C995;
+        /* color: #81C995; */
     }
     
     .bannerSubText{
@@ -89,7 +98,7 @@
     }
     .bannerHeading h1{
         font-size: 6vh;
-        color: #81C995;
+        /* color: #81C995; */
     }
     
     .bannerSubText{
@@ -112,7 +121,7 @@
     }
     .bannerHeading h1{
         font-size: 6vh;
-        color: #81C995;
+        /* color: #81C995; */
     }
     
     .bannerSubText{

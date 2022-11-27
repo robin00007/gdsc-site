@@ -126,7 +126,7 @@ function Home() {
                 css={{ background: "#C4C4C4", color: "black" }}
               />
             </div>
-            <div className="social-links">
+            <div className="social-linked">
               {/* <a href={links.facebook}>
                 <img src={facebook} alt="link" />
               </a>
@@ -140,11 +140,10 @@ function Home() {
                 <img src={instagram} alt="link" />
               </a> */}
               {/* className="Home-instagram" */}
-              <Facebook className="Home-facebook" height="48" />
-
-              <Instagram className="Home-instagram" height="48" />
-              <Github className="Home-github" fill="transparent" height="48" />
-              <LinkedIn className="Home-linkedIn" height="48" />
+              <Facebook className="Home-facebook" height="40" />
+              <Instagram className="Home-instagram" height="40" />
+              <Github className="Home-github" fill="transparent" height="40" />
+              <LinkedIn className="Home-linkedIn" height="40" />
             </div>
 
             {/* <div className="g-circles"></div>

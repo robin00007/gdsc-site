@@ -7,14 +7,20 @@ import logo from "../assets/logo.svg";
 // tab/mobile Navbar
 import Home from "../assets/navbar/Default.svg"
 import Team from "../assets/navbar/Team.svg"
+import Homes from "../assets/navbar/Homes.svg"
 import Achievements from "../assets/navbar/Achievements.svg"
 import Events from "../assets/navbar/Events.svg"
 import Project from "../assets/navbar/Project.svg"
 import downarrow from "../assets/navbar/downarrow.svg"
 import "../styles/components/MobileNavbar.css"
-
-
-export default function Navbar() {
+// dark mobile navbar
+import DarkAchievements from "../assets/navbar/DarkAchievements.svg"
+import DarkEvents from "../assets/navbar/DarkEvents.svg"
+import DarkHomes from "../assets/navbar/DarkHome.svg"
+import DarkProject from "../assets/navbar/DarkProject.svg"
+import DarkTeam from "../assets/navbar/DarkTeam.svg"
+import DarkDefault from "../assets/navbar/DarkDefault.svg"
+export default function Navbar(props) {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1000px)'
   })
@@ -60,29 +66,46 @@ export default function Navbar() {
                 <img src={downarrow} alt="" height="40px" width="20px" />
               </button>
               <button className='NavButtonIcon'>
-                <a href="/team" rel="noreferrer">
-                  <img src={Team} alt="" height="40px" />
-                </a>
+                <NavLink to="/team" rel="noreferrer">
+                  {
+                    `${props.theme}`=== `light` ? <img src={Team} alt="" height="40px" /> : <img src={DarkTeam} alt="" height="40px"/>
+                  }
+                </NavLink>
               </button>
               <button className='NavButtonIcon'>
-                <a href="/about" rel="noreferrer">
-                  <img src={Achievements} alt="" height="40px" />
-                </a>
+                <NavLink to="/about" rel="noreferrer">
+                  {
+                    `${props.theme}`=== `light` ? <img src={Achievements} alt="" height="40px" /> : <img src={DarkAchievements} alt="" height="40px" />
+                  }
+                </NavLink>
               </button>
               <button className='NavButtonIcon'>
-                <a href="/Schedule" rel="noreferrer">
-                  <img src={Events} alt="" height="40px" />
-                </a>
+                <NavLink to="/" rel="noreferrer">
+                  {
+                    `${props.theme}`=== `light` ? <img src={Homes} alt="" height="40px" /> : <img src={DarkHomes} alt="" height="40px" />
+                  }
+                </NavLink>
               </button>
               <button className='NavButtonIcon'>
-                <a href="/project" rel="noreferrer">
-                  <img src={Project} alt="" height="40px" />
-                </a>
+                <NavLink to="/Schedule" rel="noreferrer">
+                  {
+                  `${props.theme}`=== `light` ? <img src={Events} alt="" height="40px" /> : <img src={DarkEvents} alt="" height="40px" />
+                  }
+                </NavLink>
+              </button>
+              <button className='NavButtonIcon'>
+                <NavLink to="/project" rel="noreferrer">
+                  {
+                    `${props.theme}`=== `light` ? <img src={Project} alt="" height="40px" /> : <img src={DarkProject} alt="" height="40px" />
+                  }
+                </NavLink>
               </button>
             </div>
           }
           <button className='NavButtonIcon' onClick={() => { setShowIcons(!showIcons) }}>
-            <img src={Home} alt="" height="60px" />
+            {
+              `${props.theme}`=== `light` ? <img src={Home} alt="" height="60px" /> : <img src={DarkDefault} alt="" height="60px" />
+            }
           </button>
         </div>
       }

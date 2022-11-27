@@ -58,7 +58,12 @@
     justify-content: space-evenly;
     visibility: hidden;
 }
-
+.OurTeamHeadingmobile{
+    color: #4285F4;
+}
+#dark .OurTeamHeadingmobile{
+    color: #ffffff;
+}
 .timelineItems {
     background: transparent;
     border: none;
@@ -121,7 +126,7 @@
 
     .bannerHeading h1 {
         font-size: 3vh !important;
-        color: #81C995;
+        /* color: #81C995; */
     }
 
     .bannerSubText {

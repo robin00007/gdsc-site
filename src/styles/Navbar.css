@@ -20,6 +20,9 @@
   font-weight: 600;
   margin-left: 50px;
 }
+#dark .links-container a{
+  color: #ffffff;
+}
 .logo {
   height: 20px;
 }
@@ -35,7 +38,9 @@
   display: flex;
   align-items: center;
 }
-
+#dark .logo-container p{
+  color: #ffffff;
+}
 @media screen and (max-width: 490px)
 {
   

@@ -2,8 +2,7 @@
 <g filter="url(#filter0_i_30_868)">
 <ellipse cx="32.735" cy="32.5831" rx="32.735" ry="32.4834" fill="#E5E5E5"/>
 </g>
-<path d="M32.395 32.2448C28.729 32.2448 25.7457 29.2844 25.7457 25.6466C25.7457 22.0088 28.729 19.0485 32.395 19.0485C36.061 19.0485 39.0443 22.0088 39.0443 25.6466C39.0443 29.2844 36.061 32.2448 32.395 32.2448Z" fill="url(#paint0_angular_30_868)"/>
-<path d="M45.6936 46.9075H19.0964V45.4412C19.0964 39.7829 23.7362 35.1774 29.4398 35.1774H35.3503C41.0524 35.1774 45.6936 39.7829 45.6936 45.4412V46.9075Z" fill="url(#paint1_angular_30_868)"/>
+<path d="M32.395 31.7448C29.0015 31.7448 26.2457 29.0047 26.2457 25.6466C26.2457 22.2886 29.0015 19.5485 32.395 19.5485C35.7885 19.5485 38.5443 22.2886 38.5443 25.6466C38.5443 29.0047 35.7885 31.7448 32.395 31.7448ZM45.1936 46.4075H19.5964V45.4412C19.5964 40.0626 24.0087 35.6774 29.4398 35.6774H35.3503C40.7799 35.6774 45.1936 40.0627 45.1936 45.4412V46.4075Z" fill="url(#paint0_angular_30_868)" stroke="black"/>
 <defs>
 <filter id="filter0_i_30_868" x="0" y="-14.9003" width="65.47" height="79.9667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -17,16 +16,6 @@
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_30_868"/>
 </filter>
 <radialGradient id="paint0_angular_30_868" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.395 33.7111) rotate(180) scale(20.4594 20.3021)">
-<stop offset="0.25" stop-color="#EA4335"/>
-<stop offset="0.25" stop-color="#FBBC04"/>
-<stop offset="0.499491" stop-color="#FBBC04"/>
-<stop offset="0.49974" stop-color="#0F9D58"/>
-<stop offset="0.750094" stop-color="#0F9D58"/>
-<stop offset="0.750153" stop-color="#4285F4"/>
-<stop offset="0.999812" stop-color="#4285F4"/>
-<stop offset="0.9999" stop-color="#EA4335"/>
-</radialGradient>
-<radialGradient id="paint1_angular_30_868" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.395 33.7111) rotate(180) scale(20.4594 20.3021)">
 <stop offset="0.25" stop-color="#EA4335"/>
 <stop offset="0.25" stop-color="#FBBC04"/>
 <stop offset="0.499491" stop-color="#FBBC04"/>

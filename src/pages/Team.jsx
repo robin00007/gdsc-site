@@ -1,6 +1,5 @@
 import React from "react";
 import TeamImage from '../assets/team6.png'
-import { Grid } from "@mui/material";
 import "../styles/Team.css"
 import Banner from "../components/Banner";
 import Teammembers from "../data/Teammembers";
@@ -18,8 +17,8 @@ class Team extends React.Component {
           heading={"Community that grows by embracing others"}
           subtext={"We are team of experienced developers who are interested in giving back to the community"} />
         <div>
-          <div>
-            <span style={{ fontSize: "8vh", fontWeight: "bold", color: "#4285F4" }}>{"Our Team"}</span>
+          <div className="OurTeamHeadingmobile">
+            <span style={{ fontSize: "8vh", fontWeight: "bold" }}>{"Our Team"}</span>
           </div>
           <div className="yearTimeline" >
             <div><span className="timelineItems">{"2021"}</span></div>

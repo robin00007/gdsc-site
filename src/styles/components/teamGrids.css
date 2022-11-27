@@ -7,7 +7,17 @@
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
 
+#dark .team-membersCard{
+    background-color: #373737;
+}
 
+#dark .team-memberName{
+    color: #EAEAEA;
+}
+
+#dark .team-position{
+    color: #FFFFFF;
+}
 .team-details {
     display: flex;
     flex-direction: column;
