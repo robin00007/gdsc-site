@@ -1,0 +1,30 @@
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.timeline-item-date {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item-content {
+    font-size: 0.8rem;
+    color: #333;
+}

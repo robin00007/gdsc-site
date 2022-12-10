@@ -8,6 +8,28 @@
   /* background-color: yellow; */
 }
 
+.home-project-button{
+  border: none;
+  background: #4c4848;
+  color: white;
+  padding: 10px 24px 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 12px 20px 12px 0px;
+  /* margin-top: 10px; */
+  /* padding-top: 10px; */
+
+}
+.home-project-button p{
+color: white;
+}
+.home-project-button :hover {
+  /* background-color: #4285f4 !important; */
+  /* color: white !important; */
+  transform: scale(1.05);
+}
+
 .homeContainer {
   /* background-color: red;s */
   width: 100%;
