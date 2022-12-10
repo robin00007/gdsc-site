@@ -37,9 +37,6 @@ export default function Navbar(props) {
             <NavLink to="/" className="navbar-link">
               Home
             </NavLink>
-            <NavLink to="/about" className="navbar-link">
-              About
-            </NavLink>
             <NavLink to="/contact" className="navbar-link">
               Contact
             </NavLink>
@@ -72,13 +69,13 @@ export default function Navbar(props) {
                   }
                 </NavLink>
               </button>
-              <button className='NavButtonIcon'>
+              {/* <button className='NavButtonIcon'>
                 <NavLink to="/about" rel="noreferrer">
                   {
                     `${props.theme}`=== `light` ? <img src={Achievements} alt="" height="40px" /> : <img src={DarkAchievements} alt="" height="40px" />
                   }
                 </NavLink>
-              </button>
+              </button> */}
               <button className='NavButtonIcon'>
                 <NavLink to="/" rel="noreferrer">
                   {
@@ -87,7 +84,7 @@ export default function Navbar(props) {
                 </NavLink>
               </button>
               <button className='NavButtonIcon'>
-                <NavLink to="/Schedule" rel="noreferrer">
+                <NavLink to="/programs" rel="noreferrer">
                   {
                   `${props.theme}`=== `light` ? <img src={Events} alt="" height="40px" /> : <img src={DarkEvents} alt="" height="40px" />
                   }

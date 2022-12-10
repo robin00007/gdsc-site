@@ -14,6 +14,7 @@ import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
 import { ReactComponent as Github } from "../assets/github.svg";
 // import { GoogleLogo } from "../components";
 import Globe from "globe.gl";
+import { NavLink } from "react-router-dom";
 
 import {
   CarouselProvider,
@@ -232,6 +233,13 @@ function Home() {
             );
           })}
         </div>
+        <button className="home-project-button">
+          <NavLink to="/project" rel="noreferrer">
+            <p>
+            Show More
+            </p>
+          </NavLink>
+        </button>
       </div>
       <div className="post-container ">
         <div className="project-heading">
@@ -240,7 +248,7 @@ function Home() {
           <div className="ph-circles"></div>
           <div className="bh-circles"></div>
         </div>
-        <div className="horizontal-line"></div>
+        {/* <div className="horizontal-line"></div> */}
         <div className="all-posts-container">
           {posts.map((post, index) => {
             return (
