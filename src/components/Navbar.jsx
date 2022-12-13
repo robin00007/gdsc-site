@@ -1,8 +1,8 @@
 import { useMediaQuery } from "react-responsive";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // desktop/laptop Navbar
 import "../styles/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 // tab/mobile Navbar
 import Home from "../assets/navbar/Default.svg";
@@ -25,6 +25,12 @@ export default function Navbar(props) {
     query: "(min-width: 1000px)",
   });
   const [showIcons, setShowIcons] = useState(false);
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("/");
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
+
   return (
     <div>
       {isDesktopOrLaptop ? (
@@ -35,25 +41,80 @@ export default function Navbar(props) {
               <p className="title">GDSC AIT</p>
             </div>
             <div className="links-container">
-              <NavLink to="/" className="navbar-link">
+              <NavLink
+                to="/"
+                className={
+                  activeLink === "/" ? `activeRoute navbar-link` : "navbar-link"
+                }
+                onClick={() => {
+                  activeLink("/");
+                }}
+              >
                 Home
               </NavLink>
-              <NavLink to="/about" className="navbar-link">
-                About
-              </NavLink>
-              <NavLink to="/contact" className="navbar-link">
+              <NavLink
+                to="/contact"
+                className={
+                  activeLink === "/contact"
+                    ? `activeRoute navbar-link`
+                    : "navbar-link"
+                }
+                onClick={() => {
+                  activeLink("/contact");
+                }}
+              >
                 Contact
               </NavLink>
-              <NavLink to="/programs" className="navbar-link">
+              <NavLink
+                to="/programs"
+                className={
+                  activeLink === "/programs"
+                    ? `activeRoute navbar-link`
+                    : "navbar-link"
+                }
+                onClick={() => {
+                  activeLink("/programs");
+                }}
+              >
                 Programs
               </NavLink>
-              <NavLink to="/project" className="navbar-link">
+              <NavLink
+                to="/project"
+                className={
+                  activeLink === "/project"
+                    ? `activeRoute navbar-link`
+                    : "navbar-link"
+                }
+                onClick={() => {
+                  activeLink("/project");
+                }}
+              >
                 Project
               </NavLink>
-              <NavLink to="/schedule" className="navbar-link">
+              <NavLink
+                to="/schedule"
+                className={
+                  activeLink === "/schedule"
+                    ? `activeRoute navbar-link`
+                    : "navbar-link"
+                }
+                onClick={() => {
+                  activeLink("/schedule");
+                }}
+              >
                 Schedule
               </NavLink>
-              <NavLink to="/team" className="navbar-link">
+              <NavLink
+                to="/team"
+                className={
+                  activeLink === "/team"
+                    ? `activeRoute navbar-link`
+                    : "navbar-link"
+                }
+                onClick={() => {
+                  activeLink("/team");
+                }}
+              >
                 Team
               </NavLink>
             </div>
@@ -99,7 +160,7 @@ export default function Navbar(props) {
                 </NavLink>
               </button>
               <button className="NavButtonIcon">
-                <NavLink to="/Schedule" rel="noreferrer">
+                <NavLink to="/programs" rel="noreferrer">
                   {`${props.theme}` === `light` ? (
                     <img src={Events} alt="" height="40px" />
                   ) : (

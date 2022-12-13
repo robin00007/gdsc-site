@@ -1,13 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React, { useState, createContext } from "react";
-import {
-  Home,
-  Contact,
-  Programs,
-  Projects,
-  Schedule,
-  Team,
-} from "./pages/";
+import React, { useState, createContext, useEffect } from "react";
+import { Home, Contact, Programs, Projects, Schedule, Team } from "./pages/";
 import { Footer, Navbar, MobileNavabar, ToggleButtons } from "./components/";
 import "./styles/Global.css";
 
@@ -16,8 +9,15 @@ function App() {
   // for light / dark theme
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
+    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
+  useEffect(() => {
+    if (localStorage.getItem("theme")) {
+      setTheme(localStorage.getItem("theme"));
+    }
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -25,7 +25,7 @@ function App() {
         <Router>
           <Navbar theme={theme} />
           <ToggleButtons onChange={toggleTheme} checked={theme === "dark"} />
-          <div>
+          <div className="routeContainer">
             <Routes>
               <Route path="/" element={<Home theme={theme} />}></Route>
               <Route path="/about" element={<About />}></Route>
@@ -40,7 +40,7 @@ function App() {
               ></Route>
             </Routes>
           </div>
-          <Footer />
+          <Footer theme={theme} />
         </Router>
       </div>
     </ThemeContext.Provider>

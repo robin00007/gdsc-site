@@ -68,8 +68,8 @@ export default function CustomGlobe() {
         left: 0,
       }}
       ref={globeEl}
-      height="1000"
-      width="1000"
+      height={+1000}
+      width={+1000}
       // globeImageUrl={"https://wallpapercave.com/wp/wp7573471.png"}
       backgroundColor="rgba(255, 0, 0, 0)"
       waitForGlobeReady

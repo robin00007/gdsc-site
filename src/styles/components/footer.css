@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  min-height: 600px;
+  min-height: 300px;
   padding: 50px 0px;
   background-color: #17212b;
   color: white;
@@ -28,11 +28,11 @@
 }
 
 @media screen and (max-width: 480px) {
-  .footer-container{
+  .footer-container {
     min-height: 300px;
     padding-top: 210px;
   }
-.thanking{
-padding-bottom: 20px;
-}
+  .thanking {
+    padding-bottom: 20px;
+  }
 }

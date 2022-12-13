@@ -35,3 +35,17 @@ body::-webkit-scrollbar-thumb:hover {
 a:hover {
   cursor: pointer;
 }
+/* .routeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+} */
+.programsConatiner {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
