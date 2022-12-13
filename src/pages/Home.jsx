@@ -24,7 +24,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import CustomGlobe from "../components/customGlobe";
-function Home() {
+function Home(props) {
   const [discription, setDiscription] = React.useState({
     dis: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dicta, vel perferendis qui ullam dolorum, odio doloremque sed tempora sint amet quae ipsa, alias hic! In quo modi voluptates, quas magni quis voluptatibus adipisci non obcaecati velit iure, veritatis reprehenderit!",
     about:
@@ -140,10 +140,31 @@ function Home() {
                 <img src={instagram} alt="link" />
               </a> */}
               {/* className="Home-instagram" */}
-              <Facebook className="Home-facebook" height="40" />
-              <Instagram className="Home-instagram" height="40" />
-              <Github className="Home-github" fill="transparent" height="40" />
-              <LinkedIn className="Home-linkedIn" height="40" />
+              <Facebook
+                fill={props.theme === "light" ? null : "white"}
+                className="Home-facebook"
+                height="40"
+                style={{ cursor: "pointer" }}
+              />
+              <Instagram
+                fill={props.theme === "light" ? null : "white"}
+                className="Home-instagram"
+                height="40"
+                style={{ cursor: "pointer" }}
+              />
+              <Github
+                fill={props.theme === "light" ? "transparent" : "white"}
+                stroke
+                className="Home-github"
+                height="40"
+                style={{ cursor: "pointer" }}
+              />
+              <LinkedIn
+                fill={props.theme === "light" ? null : "white"}
+                className="Home-linkedIn"
+                height="40"
+                style={{ cursor: "pointer" }}
+              />
             </div>
 
             {/* <div className="g-circles"></div>

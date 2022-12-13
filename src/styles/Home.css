@@ -100,8 +100,8 @@
   /* height:50px; */
 }
 
-#dark .container-text{
-  color: #FFFFFF;
+#dark .container-text {
+  color: #ffffff;
 }
 
 .member-button {
@@ -276,8 +276,8 @@
   /* padding-left: 15%; */
   padding-top: 20px;
 }
-#dark .about-tech{
-  color: #CDCDCD;
+#dark .about-tech {
+  color: #cdcdcd;
 }
 
 .technologies {
@@ -286,7 +286,7 @@
   padding-top: 40px;
   /* padding-left: 15%; */
 }
-#dark .technologies{
+#dark .technologies {
   color: #ffffff;
 }
 
@@ -297,8 +297,8 @@
   padding-top: 10px;
 }
 
-#dark .tech-ait{
-  color: #CDCDCD;
+#dark .tech-ait {
+  color: #cdcdcd;
 }
 .container-3 {
   display: flex;
@@ -323,11 +323,11 @@
   position: relative;
 }
 
-#dark .tech-container{
+#dark .tech-container {
   background-color: #373737;
 }
-#dark .cards-title{
-  color: #CDCDCD;
+#dark .cards-title {
+  color: #cdcdcd;
 }
 .cards-circles {
   border-radius: 50%;
@@ -382,8 +382,8 @@
   height: 100px;
 }
 
-#dark .project-heading{
-  color: #FFFFFF;
+#dark .project-heading {
+  color: #ffffff;
 }
 
 .project-heading p {
@@ -398,10 +398,10 @@
   height: 50%;
   overflow-x: auto;
 }
-#dark .project-domain{
-  color: #CDCDCD;
+#dark .project-domain {
+  color: #cdcdcd;
 }
-#dark .project-card p{
+#dark .project-card p {
   color: #ffffff;
 }
 .carousel-container {
@@ -548,8 +548,8 @@
   padding: 24px;
   /* background-color: aqua; */
 }
-#dark .post-content{
-  color: #CDCDCD;
+#dark .post-content {
+  color: #cdcdcd;
 }
 
 .globe-container {
@@ -594,12 +594,9 @@
   cursor: pointer;
 }
 
-
 .Home-github {
   margin-bottom: 5px;
 }
-
-
 
 @media screen and (max-width: 480px) {
   .container {
@@ -614,7 +611,7 @@
     display: flex;
     /* margin-bottom: %; */
   }
-  .social-linked{
+  .social-linked {
     display: flex;
   }
   .post:nth-child(even) {
@@ -633,11 +630,11 @@
     padding-right: 0;
     margin-top: -300px;
   }
-/* technology page css starts here */
+  /* technology page css starts here */
   .technology {
     margin-top: -50px;
   }
-  .title-container{
+  .title-container {
     display: flex;
     width: 100%;
     margin-top: -90px;
@@ -656,29 +653,28 @@
   }
   .tech-container {
     width: 75%;
-}
-/* project css starts here */
+  }
+  /* project css starts here */
 
-  .project-card{
+  .project-card {
     min-width: 250px;
   }
 
   /* post page css starts here */
-  .post-container { 
-    width:85%;
+  .post-container {
+    width: 85%;
   }
 
   .post-content {
     width: 100%;
-}
-.post-imageUrl img{
-height: none;
-width: 250%;
-}
-.post-content p {
-
-}
-/* globe css starts here  */
+  }
+  .post-imageUrl img {
+    height: none;
+    width: 250%;
+  }
+  .post-content p {
+  }
+  /* globe css starts here  */
   .globe-container {
     height: 530px;
     display: flex;
@@ -692,16 +688,15 @@ width: 250%;
     overflow: hidden;
   }
   /* footer starts here */
-  .footer-container{
+  .footer-container {
     padding-top: 0px;
   }
-  .footer-content{
+  .footer-content {
     margin-top: -200px;
   }
   .social-links a img {
     height: 40px;
   }
-
 }
 
 @media screen and (min-width: 480px) and (max-width: 600px) {
@@ -717,7 +712,7 @@ width: 250%;
     display: flex;
     /* margin-bottom: %; */
   }
-  
+
   .post:nth-child(even) {
     display: flex;
     width: 100%;
@@ -733,11 +728,11 @@ width: 250%;
     width: 95%;
     padding-right: 0;
   }
-/* technology page css starts here */
+  /* technology page css starts here */
   .technology {
     margin-top: 400px;
   }
-  .title-container{
+  .title-container {
     display: flex;
     width: 100%;
     margin-top: -100px;
@@ -756,33 +751,32 @@ width: 250%;
   }
   .tech-container {
     width: 75%;
-}
-/* project css starts here */
+  }
+  /* project css starts here */
 
-  .project-card{
+  .project-card {
     min-width: 350px;
   }
-  .project-heading{
+  .project-heading {
     margin-top: 250px;
   }
 
   /* post page css starts here */
-  .post-container { 
+  .post-container {
     /* width:85%; */
     margin-top: -200px;
   }
 
   .post-content {
     width: 100%;
-}
-.post-imageUrl img{
-height: none;
-width: 250%;
-}
-.post-content p {
-
-}
-/* globe css starts here  */
+  }
+  .post-imageUrl img {
+    height: none;
+    width: 250%;
+  }
+  .post-content p {
+  }
+  /* globe css starts here  */
   .globe-container {
     height: 530px;
     display: flex;
@@ -796,10 +790,10 @@ width: 250%;
     overflow: hidden;
   }
   /* footer starts here */
-  .footer-container{
+  .footer-container {
     padding-top: 0px;
   }
-  .footer-content{
+  .footer-content {
     margin-top: -200px;
   }
   .social-links a img {
@@ -821,7 +815,7 @@ width: 250%;
     display: flex;
     /* margin-bottom: %; */
   }
-  
+
   .post:nth-child(even) {
     display: flex;
     width: 100%;
@@ -839,11 +833,11 @@ width: 250%;
     padding-right: 0;
     margin-top: -300px;
   }
-/* technology page css starts here */
+  /* technology page css starts here */
   .technology {
     margin-top: -200px;
   }
-  .title-container{
+  .title-container {
     display: flex;
     width: 100%;
     /* margin-top: -20px; */
@@ -861,36 +855,33 @@ width: 250%;
     flex-direction: row;
     align-items: center;
     flex-flow: row wrap;
-
   }
   .tech-container {
     min-width: 45%;
     justify-content: center;
-}
-/* project css starts here */
+  }
+  /* project css starts here */
 
-  .project-card{
+  .project-card {
     min-width: 250px;
   }
-  .project-heading{
+  .project-heading {
     display: flex;
-
   }
   /* post page css starts here */
-  .post-container { 
-    width:85%;
+  .post-container {
+    width: 85%;
   }
 
   .post-content {
     width: 100%;
-}
-.post-imageUrl img{
-height: none;
-width: 250%;
-}
+  }
+  .post-imageUrl img {
+    height: none;
+    width: 250%;
+  }
 
-
-/* globe css starts here  */
+  /* globe css starts here  */
   .globe-container {
     height: 530px;
     display: flex;
@@ -904,10 +895,10 @@ width: 250%;
     overflow: hidden;
   }
   /* footer starts here */
-  .footer-container{
+  .footer-container {
     padding-top: 0px;
   }
-  .footer-content{
+  .footer-content {
     margin-top: -200px;
   }
   .social-links a img {
