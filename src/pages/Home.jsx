@@ -96,8 +96,8 @@ function Home() {
   const myGlobe = Globe();
   // myGlobe(myDOMElement).globeImageUrl(myImageUrl).pointsData(myData);
 
-  const cards = data.map((item) => {
-    return <Homes {...item} />;
+  const cards = data.map((item, index) => {
+    return <Homes {...item} key={index} />;
   });
   const links = {
     instagram: "#",
@@ -235,9 +235,7 @@ function Home() {
         </div>
         <button className="home-project-button">
           <NavLink to="/project" rel="noreferrer">
-            <p>
-            Show More
-            </p>
+            <p>Show More</p>
           </NavLink>
         </button>
       </div>
@@ -252,7 +250,7 @@ function Home() {
         <div className="all-posts-container">
           {posts.map((post, index) => {
             return (
-              <div className="post">
+              <div className="post" key={index}>
                 <div className="post-image-container">
                   <div className="post-imageUrl">
                     <img src={post.imageUrl} alt="" />
@@ -272,7 +270,10 @@ function Home() {
       </div>
       <div className="globe-container">
         {/* {Globe({ configOptions })(<domElement />)} */}
-        <div className="globe-canvas">
+        <div
+          className="globe-canvas"
+          style={{ height: "600px", overflowY: "hidden" }}
+        >
           <CustomGlobe />
         </div>
       </div>
