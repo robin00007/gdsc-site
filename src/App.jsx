@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { useState, createContext } from "react";
 import {
   Home,
-  About,
   Contact,
   Programs,
   Projects,
