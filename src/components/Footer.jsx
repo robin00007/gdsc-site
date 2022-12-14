@@ -4,7 +4,7 @@ import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import linkedIn from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
-export default function Footer() {
+export default function Footer(props) {
   const links = {
     instagram: "#",
     facebook: "#",
@@ -12,11 +12,18 @@ export default function Footer() {
     linkedIn: "#",
   };
   return (
-    <div className="footer-container">
+    <div
+      className="footer-container"
+      style={props.theme === "dark" ? { backgroundColor: "#E0F7FF" } : {}}
+    >
       <div className="footer-content">
         <div className="thanking">
-          <p>GDSC AIT</p>
-          <p>made with love xD</p>
+          <p style={props.theme === "dark" ? { color: "#17212B" } : {}}>
+            GDSC AIT
+          </p>
+          <p style={props.theme === "dark" ? { color: "#17212B" } : {}}>
+            made with love : )
+          </p>
         </div>
         <div className="social-links">
           <a href={links.facebook}>
