@@ -1,48 +1,59 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React, { useState, createContext, useEffect } from "react";
+import React, { useState, createContext, useEffect, useContext } from "react";
 import { Home, Contact, Programs, Projects, Schedule, Team } from "./pages/";
 import { Footer, Navbar, MobileNavabar, ToggleButtons } from "./components/";
 import "./styles/Global.css";
+import { GlobeConfig, ThemeContext } from "./context";
+import light from "./assets/globe/light.png";
 
-export const ThemeContext = createContext(null);
 function App() {
-  // for light / dark theme
-  const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
-    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
-
-    setTheme((curr) => (curr === "light" ? "dark" : "light"));
-  };
-  useEffect(() => {
-    if (localStorage.getItem("theme")) {
-      setTheme(localStorage.getItem("theme"));
-    }
-  }, []);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { toggleConfig } = useContext(GlobeConfig);
+  console.log(theme);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div id={theme}>
-        <Router>
-          <Navbar theme={theme} />
-          <ToggleButtons onChange={toggleTheme} checked={theme === "dark"} />
-          <div className="routeContainer">
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/contact" element={<Contact />}></Route>
-              <Route path="/Programs" element={<Programs />}></Route>
-              <Route path="/project" element={<Projects />}></Route>
-              <Route path="/schedule" element={<Schedule />}></Route>
-              <Route path="/team" element={<Team />}></Route>
-              <Route
-                path="/Mobile"
-                element={<MobileNavabar theme={theme} />}
-              ></Route>
-            </Routes>
-          </div>
-          <Footer theme={theme} />
-        </Router>
-      </div>
-    </ThemeContext.Provider>
+    <div id={theme}>
+      <Router>
+        <Navbar theme={theme} />
+        <ToggleButtons
+          // onClick={() => {
+          //   if (theme === "dark") {
+          //     toggleConfig({
+          //       mode: "light",
+          //       image: light,
+          //       pixel: "#000",
+          //     });
+          //   } else {
+          //     toggleConfig({
+          //       mode: "dark",
+          //       image:
+          //         "https://unpkg.com/three-globe@2.24.8/example/img/earth-dark.jpg",
+          //       pixel: "#fff",
+          //     });
+          //   }
+          // }}
+          onChange={() => {
+            toggleTheme();
+          }}
+          checked={theme === "dark"}
+        />
+        <div className="routeContainer">
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/Programs" element={<Programs />}></Route>
+            <Route path="/project" element={<Projects />}></Route>
+            <Route path="/schedule" element={<Schedule />}></Route>
+            <Route path="/team" element={<Team />}></Route>
+            <Route
+              path="/Mobile"
+              element={<MobileNavabar theme={theme} />}
+            ></Route>
+          </Routes>
+        </div>
+        <Footer theme={theme} />
+      </Router>
+    </div>
   );
 }
 
