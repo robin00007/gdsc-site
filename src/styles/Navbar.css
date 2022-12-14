@@ -19,8 +19,13 @@
   font-size: 16px;
   font-weight: 600;
   margin-left: 50px;
+  padding: 5px 12px;
 }
-#dark .links-container a{
+.navbar-link:hover {
+  /* background-color: #ffc107; */
+  color: #ffc107;
+}
+#dark .links-container a {
   color: #ffffff;
 }
 .logo {
@@ -38,10 +43,12 @@
   display: flex;
   align-items: center;
 }
-#dark .logo-container p{
+#dark .logo-container p {
   color: #ffffff;
 }
-@media screen and (max-width: 490px)
-{
-  
+.activeRoute {
+  border-bottom: 3px solid #ffc107;
+  /* padding-bottom: 5px; */
+}
+@media screen and (max-width: 490px) {
 }
