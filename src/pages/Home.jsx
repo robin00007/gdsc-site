@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Button from "../components/Button";
 import "../styles/Home.css";
 import logo from "../assets/logo.svg";
@@ -15,6 +15,7 @@ import { ReactComponent as Github } from "../assets/github.svg";
 // import { GoogleLogo } from "../components";
 import Globe from "globe.gl";
 import { NavLink } from "react-router-dom";
+import light from "../assets/globe/light.png";
 
 import {
   CarouselProvider,
@@ -25,7 +26,28 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import CustomGlobe from "../components/customGlobe";
+import { GlobeConfig, ThemeContext } from "../context";
+
 function Home() {
+  const { config: globeConfig, toggleConfig } = useContext(GlobeConfig);
+  const { theme } = useContext(ThemeContext);
+  React.useEffect(() => {
+    console.log("called");
+    if (theme === "light") {
+      toggleConfig({
+        mode: "light",
+        image: "https://i.imgur.com/85aMv2L.png",
+        pixel: "#000",
+      });
+    } else {
+      toggleConfig({
+        mode: "dark",
+        image:
+          "https://unpkg.com/three-globe@2.24.8/example/img/earth-dark.jpg",
+        pixel: "#fff",
+      });
+    }
+  }, [theme]);
   const [discription, setDiscription] = React.useState({
     dis: "Google Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduates and graduate with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community",
     about:
@@ -289,7 +311,7 @@ function Home() {
           className="globe-canvas"
           style={{ height: "600px", overflowY: "hidden" }}
         >
-          <CustomGlobe />
+          <CustomGlobe globeConfig={globeConfig} />
         </div>
       </div>
     </div>
