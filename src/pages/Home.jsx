@@ -27,9 +27,9 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import CustomGlobe from "../components/customGlobe";
 function Home() {
   const [discription, setDiscription] = React.useState({
-    dis: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dicta, vel perferendis qui ullam dolorum, odio doloremque sed tempora sint amet quae ipsa, alias hic! In quo modi voluptates, quas magni quis voluptatibus adipisci non obcaecati velit iure, veritatis reprehenderit!",
+    dis: "Google Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduates and graduate with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, hic illum id nemo laudantium libero tempore assumenda asperiores quidem, alias beatae culpa. Suscipit iusto magni quidem, consectetur ex dolorem temporibus?",
+      "This is what we thrive for, here at GDSC AIT Pune. A group of tech enthusiasts learning and exploring new fields, aiming to bring a positive impact through technology in the community around us",
   });
   const [projects, setProjects] = React.useState([
     {
@@ -153,7 +153,22 @@ function Home() {
           </div>
           <div className="heroSvg">
             {/* <GoogleLogo /> */}
-            <img src={heroSvg} alt="" />
+            {/* <img src={heroSvg} alt="" /> */}
+            <lottie-player
+              src="https://assets1.lottiefiles.com/packages/lf20_pepphvu9.json"
+              background="transparent"
+              // background="yellow"
+              speed="1"
+              style={{
+                transform: "scale(2)",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              loop
+              // controls
+              autoplay
+            ></lottie-player>
           </div>
         </div>
 
