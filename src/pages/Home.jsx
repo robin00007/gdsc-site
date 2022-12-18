@@ -182,7 +182,8 @@ function Home() {
               // background="yellow"
               speed="1"
               style={{
-                transform: "scale(2)",
+                // zIndex: "2",
+                transform: "scale(1.8)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
