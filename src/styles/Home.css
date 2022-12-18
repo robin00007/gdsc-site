@@ -649,6 +649,7 @@
   }
   .heroSvg {
     width: 100%;
+    overflow: hidden;
     /* margin-top: -220px; */
   }
 
@@ -749,6 +750,7 @@
   }
   .heroSvg {
     width: 100%;
+    overflow: hidden;
     /* margin-top: -3px; */
   }
 
@@ -854,6 +856,7 @@
     width: 100%;
     /* margin-top: -600px; */
     margin-top: -150px;
+    overflow: hidden;
   }
 
   .content-container {

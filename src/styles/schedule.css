@@ -28,6 +28,9 @@
   /* justify-content: center; */
   /* background: linear-gradient(90deg, #00c2ff 0%, #fa00ff 100.02%); */
 }
+.schedule::-webkit-scrollbar {
+  height: 2px;
+}
 .scheduleCard:nth-child(2n) {
   /* background-color: red; */
   width: 400px;
@@ -143,4 +146,9 @@
   align-items: center;
   padding: 0 15px;
   border-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+  .schedule {
+    width: 100%;
+  }
 }
