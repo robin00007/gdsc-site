@@ -43,7 +43,10 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/Programs" element={<Programs />}></Route>
             <Route path="/project" element={<Projects />}></Route>
-            <Route path="/schedule" element={<Schedule />}></Route>
+            <Route
+              path="/schedule"
+              element={<Schedule theme={theme} />}
+            ></Route>
             <Route path="/team" element={<Team />}></Route>
             <Route
               path="/Mobile"

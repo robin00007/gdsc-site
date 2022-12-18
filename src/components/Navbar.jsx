@@ -141,13 +141,15 @@ export default function Navbar(props) {
                   )}
                 </NavLink>
               </button>
-              {/* <button className='NavButtonIcon'>
-                <NavLink to="/about" rel="noreferrer">
-                  {
-                    `${props.theme}`=== `light` ? <img src={Achievements} alt="" height="40px" /> : <img src={DarkAchievements} alt="" height="40px" />
-                  }
+              <button className="NavButtonIcon">
+                <NavLink to="/schedule" rel="noreferrer">
+                  {`${props.theme}` === `light` ? (
+                    <img src={Achievements} alt="" height="40px" />
+                  ) : (
+                    <img src={DarkAchievements} alt="" height="40px" />
+                  )}
                 </NavLink>
-              </button> */}
+              </button>
               <button className="NavButtonIcon">
                 <NavLink to="/" rel="noreferrer">
                   {`${props.theme}` === `light` ? (

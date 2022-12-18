@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/schedule.css";
 
-function Schedule() {
+function Schedule(props) {
   const [dates, setDates] = useState([
     {
       eventDate: "26 Jan",
@@ -46,21 +46,42 @@ function Schedule() {
                 className="uperCard"
                 style={
                   index % 2 != 0
-                    ? {
-                        transform: "rotateX(180deg)",
-                        clipPath:
-                          "polygon(0% 5%, 5% 1%, 95% 1%, 100% 5%, 100% 100%, 0% 100%)",
-                      }
+                    ? props.theme === "dark"
+                      ? {
+                          backgroundColor: "#292929",
+                          transform: "rotateX(180deg)",
+                          clipPath:
+                            "polygon(0% 5%, 5% 1%, 95% 1%, 100% 5%, 100% 100%, 0% 100%)",
+                        }
+                      : {
+                          transform: "rotateX(180deg)",
+                          clipPath:
+                            "polygon(0% 5%, 5% 1%, 95% 1%, 100% 5%, 100% 100%, 0% 100%)",
+                        }
+                    : props.theme === "dark"
+                    ? { backgroundColor: "#292929" }
                     : {}
                 }
               >
-                <div className="dateCard">
+                <div
+                  className="dateCard"
+                  style={
+                    props.theme === "dark"
+                      ? { background: "#373737", color: "white" }
+                      : null
+                  }
+                >
                   <p className="eventDate">{date.eventDate}</p>
                   <h1>{date.eventHeading}</h1>
                   <p>{date.eventDescription}</p>
                 </div>
               </div>
-              <div className="lowerCard"></div>
+              <div
+                className="lowerCard"
+                style={
+                  props.theme === "dark" ? { background: "#292929" } : null
+                }
+              ></div>
             </div>
           );
         })}
