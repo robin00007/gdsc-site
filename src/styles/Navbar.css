@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  /* background-color: red; */
+  z-index: 99;
+  position: absolute;
+  top: 0px;
 }
 .navbar {
   width: 75%;
