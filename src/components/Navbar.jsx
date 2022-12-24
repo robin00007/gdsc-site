@@ -5,13 +5,14 @@ import "../styles/Navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 // tab/mobile Navbar
-import Home from "../assets/navbar/Default.svg";
+import Home from "../assets/navbar/Default.png";
 import Team from "../assets/navbar/Team.svg";
 import Homes from "../assets/navbar/Homes.svg";
 import Achievements from "../assets/navbar/Achievements.svg";
 import Events from "../assets/navbar/Events.svg";
 import Project from "../assets/navbar/Project.svg";
 import downarrow from "../assets/navbar/downarrow.svg";
+import uparrow from "../assets/navbar/uparrow.svg";
 import "../styles/components/MobileNavbar.css";
 // dark mobile navbar
 import DarkAchievements from "../assets/navbar/DarkAchievements.svg";
@@ -179,6 +180,16 @@ export default function Navbar(props) {
               </button>
             </div>
           )}
+          {
+            !showIcons && (<button
+              className="NavButtonIcon"
+              onClick={() => {
+                setShowIcons(!showIcons);
+              }}
+            >
+              <img src={uparrow} alt="" height="40px" width="20px" />
+            </button>)
+          }
           <button
             className="NavButtonIcon"
             onClick={() => {

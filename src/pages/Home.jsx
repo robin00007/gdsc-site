@@ -17,6 +17,12 @@ import Globe from "globe.gl";
 import { NavLink } from "react-router-dom";
 import light from "../assets/globe/light.png";
 
+// FAQ files
+import Accordion from "../components/Accordion.jsx"
+import { accordionData } from "../data/accordiondata.jsx"
+import "../styles/components/accordion.css"
+import questionmark from "../assets/questionmark-symbol.svg"
+
 import {
   CarouselProvider,
   Slider,
@@ -27,6 +33,7 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import CustomGlobe from "../components/customGlobe";
 import { GlobeConfig, ThemeContext } from "../context";
+import InputForm from "../components/InputForm";
 
 function Home() {
   const { config: globeConfig, toggleConfig } = useContext(GlobeConfig);
@@ -304,6 +311,31 @@ function Home() {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="home-faq">
+        <div className="home-input-form-container">
+          <div className="input-form-circle-home">
+            <img src={questionmark} alt="hi" className="questionmark" />
+          </div>
+          <div className="home-inputform">
+            <InputForm />
+          </div>
+        </div>
+        <div className="home-inputForm-Accordion">
+          <div className="project-heading">
+            <p>FAQs</p>
+            <div className="gh-circles"></div>
+            <div className="ph-circles"></div>
+            <div className="bh-circles"></div>
+          </div>
+          <div className="home-accordion">
+            <div className="accordion">
+              {accordionData.map(({ title, content }) => (
+                <Accordion title={title} content={content} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <div className="globe-container">
