@@ -170,10 +170,15 @@ function Home() {
                 <img src={instagram} alt="link" />
               </a> */}
               {/* className="Home-instagram" */}
-              <Facebook className="Home-facebook" height="40" />
+              {/* <Facebook className="Home-facebook" height="40" />
               <Instagram className="Home-instagram" height="40" />
               <Github className="Home-github" fill="transparent" height="40" />
-              <LinkedIn className="Home-linkedIn" height="40" />
+              <LinkedIn className="Home-linkedIn" height="40" /> */}
+              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e" alt="fb" height= "40" />
+              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b" alt="IG" height= "40"/>
+              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960" alt="GH" height= "40"/>
+              {/* <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ficons8-youtube.svg?alt=media&token=d33e4d72-c7ac-4f23-8c42-10bd59e1fd84" alt="yt" height= "40"/> */}
+              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22" alt="Ln" height= "40"/>
             </div>
 
             {/* <div className="g-circles"></div>
@@ -316,7 +321,7 @@ function Home() {
       <div className="home-faq">
         <div className="home-input-form-container">
           <div className="input-form-circle-home">
-            <img src={questionmark} alt="hi" className="questionmark" />
+            <img src={questionmark} alt="?" className="questionmark" />
           </div>
           <div className="home-inputform">
             <InputForm />

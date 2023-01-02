@@ -13,12 +13,39 @@
     line-height: 134.19%;
     color: #6D6767;
 }
-.accordion-button{
+
+.accordion-button {
     color: black;
     padding-right: 20px;
 }
 
-#dark .accordion-content
-{
+#dark .accordion-content {
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .accordion-title {
+        font-size: 18px;
+    }
+    .accordion-content{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    .accordion-title {
+        font-size: 20px;
+    }
+    .accordion-content{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .accordion-title {
+        font-size: 22px;
+    }
+    .accordion-content{
+        font-size: 20px;
+    }
 }
