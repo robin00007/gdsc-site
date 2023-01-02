@@ -66,6 +66,10 @@
 
   /* background-color: green; */
 }
+.social-linked{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .circle-container {
   display: flex;
@@ -116,11 +120,6 @@
   100% {
     transform: translateY(-35px) scale(2);
   }
-}
-
-.container-text {
-  /* margin-top: 200px; */
-  /* height:50px; */
 }
 
 #dark .container-text {
@@ -609,9 +608,10 @@
 .home-inputForm-Accordion {
   display: flex;
   justify-content: space-around;
-  margin-left: 100px;
+  margin-left: 70px;
   align-content: stretch;
   flex-wrap: wrap;
+  /* align-items: center; */
 }
 
 /* #dark .home-inputForm-Accordion{
@@ -645,6 +645,7 @@
   height: 670px;
   border-radius: 10px;
   position: relative;
+  /* background-color: rgb(235, 235, 235); */
 }
 #dark .home-input-form-container{
   background-color: #373737;
@@ -743,6 +744,7 @@
 
   .social-linked {
     display: flex;
+    /* padding-left: 20px; */
   }
 
   .post:nth-child(even) {
@@ -817,7 +819,27 @@
   .home-faq{
     flex-direction: column-reverse;
   }
+  .home-input-form-container{
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 50px;
 
+  }
+  .home-inputform{
+    align-items: center;
+
+  }
+  .input-form-circle-home{
+    height: 90px;
+    width: 90px;
+    left: -35px;
+    top: -35px;
+  }
+  .questionmark{
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
   .post-content p {}
 
   /* globe css starts here  */
@@ -925,6 +947,8 @@
   .post-container {
     /* width:85%; */
     margin-top: -200px;
+    /* margin-left: -100px; */
+    
   }
 
   .post-content {
@@ -938,6 +962,27 @@
   /* home faq css */
   .home-faq{
     flex-direction: column-reverse;
+  }
+  .home-input-form-container{
+    margin-left: 90px;
+    width: 400px;
+    margin-top: 50px;
+
+  }
+  .home-inputform{
+    align-items: center;
+
+  }
+  .input-form-circle-home{
+    height: 90px;
+    width: 90px;
+    left: -35px;
+    top: -35px;
+  }
+  .questionmark{
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 25px;
   }
 
   /* globe css starts here  */
@@ -1063,7 +1108,29 @@
     height: none;
     width: 250%;
   }
+  /* home faq section */
+  .home-input-form-container{
+    margin-left: 120px;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-top: 50px;
+  }
+  .home-inputform{
+    align-items: center;
 
+  }
+  .input-form-circle-home{
+    height: 90px;
+    width: 90px;
+    left: -35px;
+    top: -35px;
+  }
+  .questionmark{
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
   /* globe css starts here  */
   .globe-container {
     height: 530px;

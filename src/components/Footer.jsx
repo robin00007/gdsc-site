@@ -27,16 +27,16 @@ export default function Footer(props) {
         </div>
         <div className="social-links">
           <a href={links.facebook}>
-            <img src={facebook} alt="link" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e" alt="link" />
           </a>
           <a href={links.linkedIn}>
-            <img src={linkedIn} alt="link" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22" alt="link" />
           </a>
           <a href={links.github}>
-            <img src={github} alt="link" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960" alt="link" />
           </a>
           <a href={links.instagram}>
-            <img src={instagram} alt="link" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b" alt="link" />
           </a>
         </div>
       </div>
