@@ -68,7 +68,7 @@
 }
 .social-linked{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .circle-container {
@@ -532,14 +532,16 @@
 }
 
 .post-imageUrl {
-  height: 75%;
   position: relative;
-  border-radius: 25px;
+  height: 75%;
   z-index: 10;
 }
 
 .post-imageUrl img {
   height: 100%;
+  border-radius: 25px;
+  /* height: 466px; */
+  width: 100%;
 }
 
 .post-imageUrl::after {
@@ -574,7 +576,21 @@
   padding: 24px;
   /* background-color: aqua; */
 }
-
+.post-content button {
+  border: none;
+  background: #4c4848;
+  color: white;
+  padding: 3px 3px 3px 3px;
+  /* font-size: 16px; */
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 12px 20px 12px 12px;  
+}
+.post-content button:hover {
+  background-color: #4285f4 !important;
+  color: white !important;
+  transform: scale(1.05);
+}
 #dark .post-content {
   color: #cdcdcd;
 }
@@ -598,9 +614,18 @@
   border-radius: 10px;
   /* margin-top: 50px; */
 }
-
+.accordion{
+  min-width: 700px;
+}
 #dark .home-accordion {
   background-color: #373737;
+}
+.accordion-title{
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-button{
+
 }
 
 
@@ -611,6 +636,7 @@
   margin-left: 70px;
   align-content: stretch;
   flex-wrap: wrap;
+  /* min-width: 40%; */
   /* align-items: center; */
 }
 
@@ -635,14 +661,13 @@
 .home-input-form-container {
   min-width: 35%;
   /* background-color: #bdc1c6; */
-  height: 500px;
   margin-left: 300px;
   /* margin-top: 100px; */
   box-shadow: 0px 8px 30px rgb(0 0 0 / 25%);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 670px;
+  height: 630px;
   border-radius: 10px;
   position: relative;
   /* background-color: rgb(235, 235, 235); */
@@ -670,6 +695,16 @@
   position: absolute;
 }
 #dark .input-form-circle-home{
+  background-color: #373737;
+}
+.quesryInputGdsc{
+  width: 100%;
+  height: 80px;
+  border-radius:5px;
+  /* margin-top: 3px; */
+  /* padding-top: 30px; */
+}
+#dark .quesryInputGdsc{
   background-color: #373737;
 }
 
@@ -840,8 +875,9 @@
     margin-left: 30px;
     margin-top: 25px;
   }
-  .post-content p {}
-
+  .accordion{
+min-width: 280px;
+  }
   /* globe css starts here  */
   .globe-container {
     height: 530px;
@@ -983,6 +1019,9 @@
     height: 40px;
     margin-left: 30px;
     margin-top: 25px;
+  }
+  .accordion{
+    min-width: 300px;
   }
 
   /* globe css starts here  */
@@ -1130,6 +1169,9 @@
     height: 40px;
     margin-left: 30px;
     margin-top: 25px;
+  }
+  .accordion{
+    min-width: 500px;
   }
   /* globe css starts here  */
   .globe-container {

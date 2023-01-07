@@ -4,34 +4,58 @@ import "../styles/schedule.css";
 function Schedule(props) {
   const [dates, setDates] = useState([
     {
-      eventDate: "26 Jan",
-      eventHeading: "Event 1",
+      eventDate: "sept 2022",
+      eventHeading: "Compose Camp",
       eventDescription:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magnaliqua. Ut enim ad minim veniam, qu",
+        " Exclusive for SEs, in this they are taught advanced concepts of Android Development",
     },
     {
-      eventDate: "13 Dec",
-      eventHeading: "Event 2",
+      eventDate: "Oct 2022",
+      eventHeading: "HacktoberFest",
       eventDescription:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magnaliqua. Ut enim ad minim veniam, qu",
+        " FE to SE are introduced with git, github, opensource contributions and hacktoberfest by digitalocean.",
     },
     {
-      eventDate: "23 April",
-      eventHeading: "Event 3",
+      eventDate: "Nov 2022",
+      eventHeading: "Google cloud Event",
       eventDescription:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magnaliqua. Ut enim ad minim veniam, qu",
+        " FE to TE, they are introduced in the field of Cloud or Devops",
     },
     {
-      eventDate: "23 April",
-      eventHeading: "Event 3",
+      eventDate: "Dec 2022",
+      eventHeading: "Android Study Jams",
       eventDescription:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magnaliqua. Ut enim ad minim veniam, qu",
+        " Exclusive for FEs, In this they are introduced to the field of Android Development and taught Basics of Android Development.",
     },
     {
-      eventDate: "23 April",
-      eventHeading: "Event 3",
+      eventDate: "Jan 2023",
+      eventHeading: "App Dev Contest 3.0",
       eventDescription:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddo eiusmod tempor incididunt ut labore et dolore magnaliqua. Ut enim ad minim veniam, qu",
+        " A 2 week long android development competition held for the FEs where they compete among themselves to build an Android App which they are taught in Android Study Jams with certain requirements in the app.",
+    },    
+    {
+      eventDate: "feb 2023",
+      eventHeading: "Flutter Festival",
+      eventDescription:
+        " Exclusive for FEs, In this they are introduced to the field of App Development and taught Basics of App Development for cross platform using Flutter",
+    },
+    {
+      eventDate: "Mar 2023",
+      eventHeading: "ML with Tensorflow",
+      eventDescription:
+        " Exclusive for FEs, In this they are introduced to the field of Machine Learning and taught Basics of Machine Learning and Tensorflow with the help of resources provided by Google itself",
+    },
+    {
+      eventDate: "Mar 2023",
+      eventHeading: "Pre Solution Challenge Event",
+      eventDescription:
+        " An exclusive 24 hr hackathon for AITians (FE to TE) which will prepare AITians for Solution Challenge (a year long international competition) by Google. This will also help the students to gain knowledge and experience environment of hackathon and prepare them for such hackathons in coming months.",
+    },
+    {
+      eventDate: "Oct 2022 to May 2023",
+      eventHeading: "Speaker Session",
+      eventDescription:
+        " A series of sessions will be conducted by BEs, industry experts regarding the growth in tech-industry through internships, open source community and hackathons. Experience will be shared through this initative",
     },
   ]);
   return (

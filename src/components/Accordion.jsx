@@ -6,8 +6,8 @@ const Accordion = ({ title, content }) => {
     return (
         <div className="accordion-item">
             <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-                <div className='accordion-button'>{isActive ? '-' : '↓'}</div>
                 <div>{title}</div>
+                <div className='accordion-button'>{isActive ? '˄' : '˅'}</div>
             </div>
             {isActive && <div className="accordion-content">{content}</div>}
         </div>

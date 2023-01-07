@@ -5,7 +5,16 @@ import logo from "../assets/logo.svg";
 import rocketCloud from "../assets/rocket+cloud.svg";
 import data from "../data/Home.jsx";
 import Homes from "../components/Homes";
+// images for the post section 
 import Posts from "../assets/post.png";
+import post1 from "../assets/posts/post1.jpeg"
+import post2 from "../assets/posts/post2.jpg"
+import post3 from "../assets/posts/post3.jpg"
+import post4 from "../assets/posts/post4.jpg"
+import post5 from "../assets/posts/post5.jpg"
+// for the read more button logic
+const max_length = 150;
+
 import Rive from "rive-react";
 import heroSvg from "../assets/homePageSvg.svg";
 import { ReactComponent as Facebook } from "../assets/facebook.svg";
@@ -22,7 +31,7 @@ import Accordion from "../components/Accordion.jsx"
 import { accordionData } from "../data/accordiondata.jsx"
 import "../styles/components/accordion.css"
 import questionmark from "../assets/questionmark-symbol.svg"
-
+import lightQuestionmark from "../assets/lightQuestionmark.svg"
 import {
   CarouselProvider,
   Slider,
@@ -34,6 +43,8 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import CustomGlobe from "../components/customGlobe";
 import { GlobeConfig, ThemeContext } from "../context";
 import InputForm from "../components/InputForm";
+import { Flag } from "@mui/icons-material";
+import { useState } from "react";
 
 function Home() {
   const { config: globeConfig, toggleConfig } = useContext(GlobeConfig);
@@ -97,28 +108,28 @@ function Home() {
   const [posts, setPosts] = React.useState([
     {
       postUrl: "www.google.com",
-      caption: "fdfdsfsdf",
-      imageUrl: Posts,
+      caption: "We are counting down the days, so should you⚡🗓️ GDSC AIT Pune in collaboration with GDSC Vel Tech is hosting an event to guide you for GSoC 2023. (Google Summer of Code) Register yourself ASAP!! Perks- Speaker Event & Certificate of Participation 🤍 Cheers to endless learning!🥂 GDSC AIT Pune X GDSC Vel Tech",
+      imageUrl: post1,
     },
     {
       postUrl: "www.google.com",
-      caption: "fdfdsfsdf",
-      imageUrl: Posts,
+      caption: "GDSC AIT Pune ,🔥 powered by Google Developers presents it's first Google Cloud Career Practitioner class. ✨An exclusive digital Google Cloud skill badge demonstrates your growing Google Cloud recognized skillset. Show your cloud skills by completing the hands-on labs, including a final assessment challenge lab, to test your skills and earn a Google Cloud skill badge to share with your network. Stuck anywhere ⁉️ Get in Touch with Tarun Mishra who is specially trained on Google Cloud will help you out. 👤 Tarun Mishra - Google Cloud facilitator 📱 WhatsApp No :- +91 95984 15980 So come ready with your laptops charged 👨‍💻 !! You will be getting free access to qwiklabs and exclusive badges. 📍 Venue: Manekshaw Hall 🕧 Timing: 12:30 - 13:30 20th Nov 2022 (Sunday) See you in the cloud ☁️",
+      imageUrl: post2,
     },
     {
       postUrl: "www.google.com",
-      caption: "fdfdsfsdf",
-      imageUrl: Posts,
+      caption: "Come join us!! The timer has begun to run down! We require your help in order to fly throughout the galaxy. All Earthlings are welcome on board our ship. We will help you understand Google technologies including Android, Flutter, Google Cloud, Machine Learning, and Web Development. If you join us on our adventure, you will also acquire design and managerial abilities in addition to these. If you're an Earthling looking to join the GDSC community, fill out the form Link is in the bio. On or before November 5, 2022 at 11:59 PM, the form must be submitted",
+      imageUrl: post3,
     },
     {
       postUrl: "www.google.com",
-      caption: "fdfdsfsdf",
-      imageUrl: Posts,
+      caption: "Open source is about collaborating; not competing. Don’t forget to make a pull request Start your journey of open sourcing with Hacktoberfest 2022. What is Hacktoberfest ? It is a space for folks taking part in building community and help people by giving them a dedicated time and place to work on their contributions. Stay tuned, we are bringing a surprise for you. Registrations have started: Link in Bio",
+      imageUrl: post4,
     },
     {
       postUrl: "www.google.com",
-      caption: "fdfdsfsdf",
-      imageUrl: Posts,
+      caption: "Don't miss the opportunity !Let’s learn Android development , join the #ComposeCamp on and learn the fundamentals of how to build modern Android apps with Jetpack Compose in this journey.",
+      imageUrl: post5,
     },
   ]);
 
@@ -174,11 +185,11 @@ function Home() {
               <Instagram className="Home-instagram" height="40" />
               <Github className="Home-github" fill="transparent" height="40" />
               <LinkedIn className="Home-linkedIn" height="40" /> */}
-              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e" alt="fb" height= "40" />
-              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b" alt="IG" height= "40"/>
-              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960" alt="GH" height= "40"/>
-              {/* <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ficons8-youtube.svg?alt=media&token=d33e4d72-c7ac-4f23-8c42-10bd59e1fd84" alt="yt" height= "40"/> */}
-              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22" alt="Ln" height= "40"/>
+              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e" alt="fb" height="40" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b" alt="IG" height="40" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960" alt="GH" height="40" />
+              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ficons8-youtube.svg?alt=media&token=d33e4d72-c7ac-4f23-8c42-10bd59e1fd84" alt="yt" height= "40"/>
+              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22" alt="Ln" height="40" />
             </div>
 
             {/* <div className="g-circles"></div>
@@ -299,6 +310,10 @@ function Home() {
         {/* <div className="horizontal-line"></div> */}
         <div className="all-posts-container">
           {posts.map((post, index) => {
+            const [visited, setVisited] = React.useState(1);
+            function clickedReadMore(){
+              setVisited(!visited)
+            }
             return (
               <div className="post" key={index}>
                 <div className="post-image-container">
@@ -307,11 +322,16 @@ function Home() {
                   </div>
                 </div>
                 <div className="post-content">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maxime neque natus quia accusantium quae consequatur, odio
-                    asperiores tempore dolorem ullam.
-                  </p>
+                  {(post.caption.length > max_length && Boolean(visited)) ?
+                    (
+                      <div>
+                        {`${post.caption.substring(0, max_length)}...`}<button onClick={clickedReadMore}>Read more</button>
+                      </div>
+                    ) :
+                    <p>
+                      {post.caption}<button onClick={clickedReadMore}>Show less</button>
+                    </p>
+                  }
                 </div>
               </div>
             );
@@ -321,7 +341,10 @@ function Home() {
       <div className="home-faq">
         <div className="home-input-form-container">
           <div className="input-form-circle-home">
-            <img src={questionmark} alt="?" className="questionmark" />
+            {theme=="light" ?
+            (<img src={questionmark} alt="?" className="questionmark" />):
+            (<img src={lightQuestionmark} alt="" className="questionmark"/>)
+          }
           </div>
           <div className="home-inputform">
             <InputForm />
@@ -339,6 +362,7 @@ function Home() {
               {accordionData.map(({ title, content }) => (
                 <Accordion title={title} content={content} />
               ))}
+              {/* <input type="text" placeholder="Ask your Query Related To DSC" className="quesryInputGdsc" /> */}
             </div>
           </div>
         </div>
