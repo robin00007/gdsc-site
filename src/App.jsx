@@ -12,7 +12,7 @@ function App() {
   const { toggleConfig } = useContext(GlobeConfig);
   console.log(theme);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
