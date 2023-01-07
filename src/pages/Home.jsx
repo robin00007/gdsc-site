@@ -45,6 +45,7 @@ import { GlobeConfig, ThemeContext } from "../context";
 import InputForm from "../components/InputForm";
 import { Flag } from "@mui/icons-material";
 import { useState } from "react";
+import Spinner from "../components/Spinner";
 
 function Home() {
   const { config: globeConfig, toggleConfig } = useContext(GlobeConfig);
