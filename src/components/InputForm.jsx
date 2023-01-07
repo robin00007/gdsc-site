@@ -17,7 +17,7 @@ function InputForm() {
                 <input type="email" placeholder='Enter your email' name='userEmail' className='home-input-form-name'/>
                 <input type="text" placeholder="Your Query" name='message' className='home-input-form-message' />
                 <div className='home-bottom-input-form'>
-                    <img src={inputformimage} alt="mailus" className='input-form-image' />
+                    {/* <img src={inputformimage} alt="mailus" className='input-form-image' /> */}
                     <button className="button-home-input-form" type='submit' value="Send">
                         submit
                     </button>

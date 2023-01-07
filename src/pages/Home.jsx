@@ -13,7 +13,7 @@ import post3 from "../assets/posts/post3.jpg"
 import post4 from "../assets/posts/post4.jpg"
 import post5 from "../assets/posts/post5.jpg"
 // for the read more button logic
-const max_length = 150;
+const max_length = 200;
 
 import Rive from "rive-react";
 import heroSvg from "../assets/homePageSvg.svg";
@@ -148,7 +148,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="main-Container">
       <div className="fixed-circle"></div>
       <div className="homeContainer">
         <div className="container">
@@ -333,12 +333,14 @@ function Home() {
                       {post.caption}<button onClick={clickedReadMore}>Show less</button>
                     </p>
                   }
+                  {/* {post.caption} */}
                 </div>
               </div>
             );
           })}
         </div>
       </div>
+      <div className="home-faq-container">
       <div className="home-faq">
         <div className="home-input-form-container">
           <div className="input-form-circle-home">
@@ -368,6 +370,9 @@ function Home() {
           </div>
         </div>
       </div>
+
+      </div>
+      
       <div className="globe-container">
         {/* {Globe({ configOptions })(<domElement />)} */}
         <div

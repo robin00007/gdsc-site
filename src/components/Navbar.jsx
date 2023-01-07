@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import React, { useEffect, useState } from "react";
 // desktop/laptop Navbar
 import "../styles/Navbar.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 // tab/mobile Navbar
 import Home from "../assets/navbar/Default.png";
@@ -30,7 +30,7 @@ export default function Navbar(props) {
   const [activeLink, setActiveLink] = useState("/");
   useEffect(() => {
     setActiveLink(location.pathname);
-  }, [location.pathname]);
+  }, [setActiveLink]);
 
   return (
     <div>
@@ -42,18 +42,18 @@ export default function Navbar(props) {
               <p className="title">GDSC AIT</p>
             </div>
             <div className="links-container">
-              <NavLink
+              <Link
                 to="/"
                 className={
                   activeLink === "/" ? `activeRoute navbar-link` : "navbar-link"
                 }
                 onClick={() => {
-                  activeLink("/");
+                  setActiveLink("/");
                 }}
               >
                 Home
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 to="/contact"
                 className={
                   activeLink === "/contact"
@@ -61,12 +61,12 @@ export default function Navbar(props) {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  activeLink("/contact");
+                  setActiveLink("/contact");
                 }}
               >
                 Contact
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 to="/programs"
                 className={
                   activeLink === "/programs"
@@ -74,12 +74,12 @@ export default function Navbar(props) {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  activeLink("/programs");
+                  setActiveLink("/programs");
                 }}
               >
                 Programs
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 to="/project"
                 className={
                   activeLink === "/project"
@@ -87,12 +87,12 @@ export default function Navbar(props) {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  activeLink("/project");
+                  setActiveLink("/project");
                 }}
               >
                 Project
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 to="/schedule"
                 className={
                   activeLink === "/schedule"
@@ -100,12 +100,12 @@ export default function Navbar(props) {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  activeLink("/schedule");
+                  setActiveLink("/schedule");
                 }}
               >
                 Schedule
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
                 to="/team"
                 className={
                   activeLink === "/team"
@@ -113,11 +113,11 @@ export default function Navbar(props) {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  activeLink("/team");
+                  setActiveLink("/team");
                 }}
               >
                 Team
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>
@@ -134,49 +134,49 @@ export default function Navbar(props) {
                 <img src={downarrow} alt="" height="40px" width="20px" />
               </button>
               <button className="NavButtonIcon">
-                <NavLink to="/team" rel="noreferrer">
+                <Link to="/team" rel="noreferrer">
                   {`${props.theme}` === `light` ? (
                     <img src={Team} alt="" height="40px" />
                   ) : (
                     <img src={DarkTeam} alt="" height="40px" />
                   )}
-                </NavLink>
+                </Link>
               </button>
               <button className="NavButtonIcon">
-                <NavLink to="/schedule" rel="noreferrer">
+                <Link to="/schedule" rel="noreferrer">
                   {`${props.theme}` === `light` ? (
                     <img src={Achievements} alt="" height="40px" />
                   ) : (
                     <img src={DarkAchievements} alt="" height="40px" />
                   )}
-                </NavLink>
+                </Link>
               </button>
               <button className="NavButtonIcon">
-                <NavLink to="/" rel="noreferrer">
+                <Link to="/" rel="noreferrer">
                   {`${props.theme}` === `light` ? (
                     <img src={Homes} alt="" height="40px" />
                   ) : (
                     <img src={DarkHomes} alt="" height="40px" />
                   )}
-                </NavLink>
+                </Link>
               </button>
               <button className="NavButtonIcon">
-                <NavLink to="/programs" rel="noreferrer">
+                <Link to="/programs" rel="noreferrer">
                   {`${props.theme}` === `light` ? (
                     <img src={Events} alt="" height="40px" />
                   ) : (
                     <img src={DarkEvents} alt="" height="40px" />
                   )}
-                </NavLink>
+                </Link>
               </button>
               <button className="NavButtonIcon">
-                <NavLink to="/project" rel="noreferrer">
+                <Link to="/project" rel="noreferrer">
                   {`${props.theme}` === `light` ? (
                     <img src={Project} alt="" height="40px" />
                   ) : (
                     <img src={DarkProject} alt="" height="40px" />
                   )}
-                </NavLink>
+                </Link>
               </button>
             </div>
           )}
