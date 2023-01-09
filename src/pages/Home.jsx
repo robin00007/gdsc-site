@@ -14,6 +14,8 @@ import post4 from "../assets/posts/post4.jpg"
 import post5 from "../assets/posts/post5.jpg"
 // for the read more button logic
 const max_length = 200;
+// for the projects images
+import project1 from "../assets/projects/text-edit-app.png"
 
 import Rive from "rive-react";
 import heroSvg from "../assets/homePageSvg.svg";
@@ -74,11 +76,11 @@ function Home() {
   });
   const [projects, setProjects] = React.useState([
     {
-      imageUrl: "",
-      projectLink: "www.google.com",
-      name: "Project Name",
+      imageUrl: project1,
+      projectLink: "https://text-edit-gdsc.netlify.app/",
+      name: "Text-Edit",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "1/11/2022",
       domain: "Web Development",
     },
     {
@@ -245,47 +247,12 @@ function Home() {
           <div className="bh-circles"></div>
         </div>
         <div className="project-card-container">
-          {/* <CarouselProvider
-            className="carousel-container"
-            isPlaying={true}
-            interval={2000}
-            visibleSlides={3}
-            orientation="horizontal"
-            naturalSlideWidth={100}
-            naturalSlideHeight={500}
-            totalSlides={projects.length}
-            infinite={true}
-            // isIntrinsicHeight={true}
-          >
-            <Slider
-              className="slider"
-              style={{ display: "flex", height: "100%", padding: "10px" }}
-            >
-              {projects.map((project, index) => {
-                return (
-                  <Slide
-                    index={index}
-                    key={index}
-                    style={{ height: "100%" }}
-                    className="project-card"
-                  >
-                    <div className="banner-image"></div>
-                    <p>{project.name}</p>
-                    <div className="card-footer">
-                      <p className="project-domain">{project.domain}</p>
-                      <p>{project.status}</p>
-                    </div>
-                  </Slide>
-                );
-              })}
-            </Slider>
-            <ButtonBack>Back</ButtonBack>
-            <ButtonNext>Next</ButtonNext>
-          </CarouselProvider> */}
           {projects.map((project, index) => {
             return (
               <div key={index} className="project-card">
-                <div className="banner-image"></div>
+                <div className="banner-image">
+                  {/* <img src={project.imageUrl} alt=""/> */}
+                </div>
                 <p>{project.name}</p>
                 <div className="card-footer">
                   <p className="project-domain">{project.domain}</p>
@@ -372,7 +339,6 @@ function Home() {
       </div>
 
       </div>
-      
       <div className="globe-container">
         {/* {Globe({ configOptions })(<domElement />)} */}
         <div

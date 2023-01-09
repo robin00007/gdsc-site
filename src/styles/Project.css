@@ -49,6 +49,7 @@
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
+  height: 200px;
 }
 .Project-names {
   margin-top: 40px;
