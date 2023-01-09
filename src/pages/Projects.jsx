@@ -3,98 +3,87 @@ import "../styles/Project.css";
 import Banner from "../components/Banner";
 import Adventure from "../assets/teamwork.svg";
 
+// projects images 
+import project1 from "../assets/projects/text-edit-app.png"
+import project2 from "../assets/projects/project2.png"
+import project3 from "../assets/projects/project3.png"
+import project4 from "../assets/projects/ai4.png"
+
 function Projects() {
   const [projects, setProjects] = React.useState([
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name",
+      imageUrl: project1,
+      projectLink: "https://text-edit-gdsc.netlify.app/",
+      name: "Text-edit",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "1/11/2022",
       domain: "Web Development",
+      github: "https://github.com/DSC-AIT-Pune/Text-Edit",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 2",
+      imageUrl: project2,
+      projectLink: "https://crypto-reactapp-heyajaysingh.netlify.app/",
+      name: "Cryto-app",
       status: "completed",
-      endDate: "12/12/2020",
-      domain: "Web Development",
+      endDate: "15/11/2022",
+      domain: "React app",
+      github: "https://github.com/ajaysinghpanwar2002/ReactProjects/tree/main/crypto-app",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 3",
+      imageUrl: project3,
+      projectLink: "https://transparency-ethindia.netlify.app",
+      name: "Transparency-ethindia",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "4/12/2022",
       domain: "Web Development",
+      github: "https://github.com/Nymphalys/Transparency-ETHIndia",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 4",
+      imageUrl: project4,
+      projectLink: "https://drive.google.com/drive/folders/1ABZEsP0auHVeNxjVTHSJmtTz0I-BMAg7",
+      name: "AiReceipt",
       status: "completed",
-      endDate: "12/12/2020",
-      domain: "Web Development",
+      endDate: "9/1/2022",
+      domain: "App Development",
+      github: "https://github.com/licofiS/AiReceipt",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 2",
+      imageUrl: project1,
+      projectLink: "https://text-edit-gdsc.netlify.app/",
+      name: "Text-edit",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "1/11/2022",
       domain: "Web Development",
+      github: "https://github.com/DSC-AIT-Pune/Text-Edit",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 3",
+      imageUrl: project1,
+      projectLink: "https://text-edit-gdsc.netlify.app/",
+      name: "Text-edit",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "1/11/2022",
       domain: "Web Development",
+      github: "https://github.com/DSC-AIT-Pune/Text-Edit",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 4",
+      imageUrl: project1,
+      projectLink: "https://text-edit-gdsc.netlify.app/",
+      name: "Text-edit",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "1/11/2022",
       domain: "Web Development",
+      github: "https://github.com/DSC-AIT-Pune/Text-Edit",
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 2",
+      imageUrl: project1,
+      projectLink: "https://text-edit-gdsc.netlify.app/",
+      name: "Text-edit",
       status: "completed",
-      endDate: "12/12/2020",
+      endDate: "1/11/2022",
       domain: "Web Development",
+      github: "https://github.com/DSC-AIT-Pune/Text-Edit",
     },
-    {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 3",
-      status: "completed",
-      endDate: "12/12/2020",
-      domain: "Web Development",
-    },
-    {
-      imageUrl:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      projectLink: "www.google.com",
-      name: "Project Name 4",
-      status: "completed",
-      endDate: "12/12/2020",
-      domain: "Web Development",
-    },
+    
   ]);
   return (
     <div className={"projectConatiner"}>
@@ -108,18 +97,18 @@ function Projects() {
           "Building projects for communities can be a rewarding and meaningful way to make a positive impact in the world. By creating projects that address the needs and challenges of a specific community, developers can help improve the lives of others and make a meaningful difference."
         }
       />
-      {/* <p className={"projectSubheading"}>Connect - Learn - Grow</p> */}
-
       <div className="project-card-containers">
         {projects.map((project, index) => {
           return (
             <div key={index} className="project-cards">
-              <img className="projects-image" src={project.imageUrl} alt="" />
-              <p className="Project-names">{project.name}</p>
-              <div className="card-footers">
-                <p className="project-domains">{project.domain}</p>
-                <p className="projects-status">{project.status}</p>
-              </div>
+              <a href={project.projectLink} target="_blank">
+                <img className="projects-image" src={project.imageUrl} alt="" />
+              </a>
+                <p className="Project-names">{project.name}</p>
+                <div className="card-footers">
+                  <a className="project-domains" href={project.github} target="_blank">{project.domain}</a>
+                  <p className="projects-status">{project.status}</p>
+                </div>
             </div>
           );
         })}
