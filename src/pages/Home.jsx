@@ -5,17 +5,26 @@ import logo from "../assets/logo.svg";
 import rocketCloud from "../assets/rocket+cloud.svg";
 import data from "../data/Home.jsx";
 import Homes from "../components/Homes";
-// images for the post section 
+// images for the post section
 import Posts from "../assets/post.png";
-import post1 from "../assets/posts/post1.jpeg"
-import post2 from "../assets/posts/post2.jpg"
-import post3 from "../assets/posts/post3.jpg"
-import post4 from "../assets/posts/post4.jpg"
-import post5 from "../assets/posts/post5.jpg"
+import post1 from "../assets/posts/post1.jpeg";
+import post2 from "../assets/posts/post2.jpg";
+import post3 from "../assets/posts/post3.jpg";
+import post4 from "../assets/posts/post4.jpg";
+import post5 from "../assets/posts/post5.jpg";
+import project1 from "../assets/projects/text-edit-app.png";
+import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project3.png";
+import project4 from "../assets/projects/ai4.png";
+import project5 from "../assets/projects/project5.png";
+import project6 from "../assets/projects/project6.png";
+import project7 from "../assets/projects/project7.jpeg";
+import project8 from "../assets/projects/project8.png";
+import lightGlobe from "../assets/globe/light.png";
 // for the read more button logic
 const max_length = 200;
 // for the projects images
-import project1 from "../assets/projects/text-edit-app.png"
+// import project1 from "../assets/projects/text-edit-app.png";
 
 import Rive from "rive-react";
 import heroSvg from "../assets/homePageSvg.svg";
@@ -29,11 +38,11 @@ import { NavLink } from "react-router-dom";
 import light from "../assets/globe/light.png";
 
 // FAQ files
-import Accordion from "../components/Accordion.jsx"
-import { accordionData } from "../data/accordiondata.jsx"
-import "../styles/components/accordion.css"
-import questionmark from "../assets/questionmark-symbol.svg"
-import lightQuestionmark from "../assets/lightQuestionmark.svg"
+import Accordion from "../components/Accordion.jsx";
+import { accordionData } from "../data/accordiondata.jsx";
+import "../styles/components/accordion.css";
+import questionmark from "../assets/questionmark-symbol.svg";
+import lightQuestionmark from "../assets/lightQuestionmark.svg";
 import {
   CarouselProvider,
   Slider,
@@ -57,7 +66,7 @@ function Home() {
     if (theme === "light") {
       toggleConfig({
         mode: "light",
-        image: "https://i.imgur.com/85aMv2L.png",
+        image: lightGlobe,
         pixel: "#000",
       });
     } else {
@@ -75,35 +84,46 @@ function Home() {
       "This is what we thrive for, here at GDSC AIT Pune. A group of tech enthusiasts learning and exploring new fields, aiming to bring a positive impact through technology in the community around us",
   });
   const [projects, setProjects] = React.useState([
+    // {
+    //   imageUrl: project1,
+    //   projectLink: "https://text-edit-gdsc.netlify.app/",
+    //   name: "Text-edit",
+    //   status: "completed",
+    //   endDate: "1/11/2022",
+    //   domain: "Web Development",
+    //   github: "https://github.com/DSC-AIT-Pune/Text-Edit",
+    // },
+    // {
+    //   imageUrl: project4,
+    //   projectLink:
+    //     "https://drive.google.com/drive/folders/1ABZEsP0auHVeNxjVTHSJmtTz0I-BMAg7",
+    //   name: "AiReceipt",
+    //   status: "completed",
+    //   endDate: "9/1/2022",
+    //   domain: "App Development",
+    //   github: "https://github.com/licofiS/AiReceipt",
+    // },
     {
-      imageUrl: "",
-      projectLink: "https://uberrecommendation.southindia.cloudapp.azure.com/desktop",
-      name: "Uber Suggest",
-      status: "completed",
-      endDate: "4/7/2021",
-      domain: "Web and App",
-      github: "https://github.com/The-Anton/uber-recommendation-engine",
-    },
-    {
-      imageUrl: "",
-      projectLink: "https://play.google.com/store/apps/details?id=com.solvabit.climate",
-      name: "eSustain",
-      status: "completed",
-      endDate: "14/12/2021",
-      domain: "App Development",
-      github: "https://github.com/The-Anton/eSustain",
-    },
-    {
-      imageUrl: "",
+      imageUrl: project2,
       projectLink: "https://crypto-reactapp-heyajaysingh.netlify.app/",
       name: "Cryto-app",
       status: "completed",
       endDate: "15/11/2022",
       domain: "React app",
-      github: "https://github.com/ajaysinghpanwar2002/ReactProjects/tree/main/crypto-app",
+      github:
+        "https://github.com/ajaysinghpanwar2002/ReactProjects/tree/main/crypto-app",
     },
+    // {
+    //   imageUrl: project3,
+    //   projectLink: "https://transparency-ethindia.netlify.app",
+    //   name: "Transparency-ethindia",
+    //   status: "completed",
+    //   endDate: "4/12/2022",
+    //   domain: "Web Development",
+    //   github: "https://github.com/Nymphalys/Transparency-ETHIndia",
+    // },
     {
-      imageUrl: "",
+      imageUrl: project7,
       projectLink: "https://github.com/The-Anton/soil-moisture-detection-api",
       name: "soil-moisture-detection-api",
       status: "completed",
@@ -111,31 +131,67 @@ function Home() {
       domain: "python",
       github: "https://github.com/The-Anton/soil-moisture-detection-api",
     },
+    {
+      imageUrl: project8,
+      projectLink:
+        "https://github.com/The-Anton/special-learning-disablility-analyser",
+      name: "Saathi",
+      status: "OnGoing",
+      endDate: "26/8/2022",
+      domain: "Web Development",
+      github:
+        "https://github.com/The-Anton/special-learning-disablility-analyser",
+    },
+    // {
+    //   imageUrl: project5,
+    //   projectLink:
+    //     "https://uberrecommendation.southindia.cloudapp.azure.com/desktop",
+    //   name: "Uber Suggest",
+    //   status: "completed",
+    //   endDate: "4/7/2021",
+    //   domain: "Web and App",
+    //   github: "https://github.com/The-Anton/uber-recommendation-engine",
+    // },
+    {
+      imageUrl: project6,
+      projectLink:
+        "https://play.google.com/store/apps/details?id=com.solvabit.climate",
+      name: "eSustain",
+      status: "completed",
+      endDate: "14/12/2021",
+      domain: "App Development",
+      github: "https://github.com/The-Anton/eSustain",
+    },
   ]);
   const [posts, setPosts] = React.useState([
     {
       postUrl: "www.google.com",
-      caption: "We are counting down the days, so should you⚡🗓️ GDSC AIT Pune in collaboration with GDSC Vel Tech is hosting an event to guide you for GSoC 2023. (Google Summer of Code) Register yourself ASAP!! Perks- Speaker Event & Certificate of Participation 🤍 Cheers to endless learning!🥂 GDSC AIT Pune X GDSC Vel Tech",
+      caption:
+        "We are counting down the days, so should you⚡🗓️ GDSC AIT Pune in collaboration with GDSC Vel Tech is hosting an event to guide you for GSoC 2023. (Google Summer of Code) Register yourself ASAP!! Perks- Speaker Event & Certificate of Participation 🤍 Cheers to endless learning!🥂 GDSC AIT Pune X GDSC Vel Tech",
       imageUrl: post1,
     },
     {
       postUrl: "www.google.com",
-      caption: "GDSC AIT Pune ,🔥 powered by Google Developers presents it's first Google Cloud Career Practitioner class. ✨An exclusive digital Google Cloud skill badge demonstrates your growing Google Cloud recognized skillset. Show your cloud skills by completing the hands-on labs, including a final assessment challenge lab, to test your skills and earn a Google Cloud skill badge to share with your network. Stuck anywhere ⁉️ Get in Touch with Tarun Mishra who is specially trained on Google Cloud will help you out. 👤 Tarun Mishra - Google Cloud facilitator 📱 WhatsApp No :- +91 95984 15980 So come ready with your laptops charged 👨‍💻 !! You will be getting free access to qwiklabs and exclusive badges. 📍 Venue: Manekshaw Hall 🕧 Timing: 12:30 - 13:30 20th Nov 2022 (Sunday) See you in the cloud ☁️",
+      caption:
+        "GDSC AIT Pune ,🔥 powered by Google Developers presents it's first Google Cloud Career Practitioner class. ✨An exclusive digital Google Cloud skill badge demonstrates your growing Google Cloud recognized skillset. Show your cloud skills by completing the hands-on labs, including a final assessment challenge lab, to test your skills and earn a Google Cloud skill badge to share with your network. Stuck anywhere ⁉️ Get in Touch with Tarun Mishra who is specially trained on Google Cloud will help you out. 👤 Tarun Mishra - Google Cloud facilitator 📱 WhatsApp No :- +91 95984 15980 So come ready with your laptops charged 👨‍💻 !! You will be getting free access to qwiklabs and exclusive badges. 📍 Venue: Manekshaw Hall 🕧 Timing: 12:30 - 13:30 20th Nov 2022 (Sunday) See you in the cloud ☁️",
       imageUrl: post2,
     },
     {
       postUrl: "www.google.com",
-      caption: "Come join us!! The timer has begun to run down! We require your help in order to fly throughout the galaxy. All Earthlings are welcome on board our ship. We will help you understand Google technologies including Android, Flutter, Google Cloud, Machine Learning, and Web Development. If you join us on our adventure, you will also acquire design and managerial abilities in addition to these. If you're an Earthling looking to join the GDSC community, fill out the form Link is in the bio. On or before November 5, 2022 at 11:59 PM, the form must be submitted",
+      caption:
+        "Come join us!! The timer has begun to run down! We require your help in order to fly throughout the galaxy. All Earthlings are welcome on board our ship. We will help you understand Google technologies including Android, Flutter, Google Cloud, Machine Learning, and Web Development. If you join us on our adventure, you will also acquire design and managerial abilities in addition to these. If you're an Earthling looking to join the GDSC community, fill out the form Link is in the bio. On or before November 5, 2022 at 11:59 PM, the form must be submitted",
       imageUrl: post3,
     },
     {
       postUrl: "www.google.com",
-      caption: "Open source is about collaborating; not competing. Don’t forget to make a pull request Start your journey of open sourcing with Hacktoberfest 2022. What is Hacktoberfest ? It is a space for folks taking part in building community and help people by giving them a dedicated time and place to work on their contributions. Stay tuned, we are bringing a surprise for you. Registrations have started: Link in Bio",
+      caption:
+        "Open source is about collaborating; not competing. Don’t forget to make a pull request Start your journey of open sourcing with Hacktoberfest 2022. What is Hacktoberfest ? It is a space for folks taking part in building community and help people by giving them a dedicated time and place to work on their contributions. Stay tuned, we are bringing a surprise for you. Registrations have started: Link in Bio",
       imageUrl: post4,
     },
     {
       postUrl: "www.google.com",
-      caption: "Don't miss the opportunity !Let’s learn Android development , join the #ComposeCamp on and learn the fundamentals of how to build modern Android apps with Jetpack Compose in this journey.",
+      caption:
+        "Don't miss the opportunity !Let’s learn Android development , join the #ComposeCamp on and learn the fundamentals of how to build modern Android apps with Jetpack Compose in this journey.",
       imageUrl: post5,
     },
   ]);
@@ -167,24 +223,31 @@ function Home() {
             </div>
             <p className="container-text">{discription.dis}</p>
             <div className="button-container">
-              <Button text={"Join as a member"} className="member-button" />
-              <Button
-                text={"Join discord"}
-                className="discord-button"
-                css={{ background: "#C4C4C4", color: "black" }}
-              />
+              <a
+                target="_blank"
+                href="https://gdsc.community.dev/army-institute-of-technology-pune/"
+              >
+                <Button text={"Join as a member"} className="member-button" />
+              </a>
+              <a target="_blank" href="https://discord.com/invite/56sCubbrtp">
+                <Button
+                  text={"Join discord"}
+                  className="discord-button"
+                  css={{ background: "#C4C4C4", color: "black" }}
+                />
+              </a>
             </div>
             <div className="social-linked">
-              {/* <a href={links.facebook}>
+              {/* <a target="_blank" href={links.facebook}>
                 <img src={facebook} alt="link" />
               </a>
-              <a href={links.linkedIn}>
+              <a target="_blank" href={links.linkedIn}>
                 <img src={linkedIn} alt="link" />
               </a>
-              <a href={links.github}>
+              <a target="_blank" href={links.github}>
                 <img src={github} alt="link" />
               </a>
-              <a href={links.instagram}>
+              <a target="_blank" href={links.instagram}>
                 <img src={instagram} alt="link" />
               </a> */}
               {/* className="Home-instagram" */}
@@ -192,11 +255,43 @@ function Home() {
               <Instagram className="Home-instagram" height="40" />
               <Github className="Home-github" fill="transparent" height="40" />
               <LinkedIn className="Home-linkedIn" height="40" /> */}
-              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e" alt="fb" height="40" />
-              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b" alt="IG" height="40" />
-              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960" alt="GH" height="40" />
-              <img src = "https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ficons8-youtube.svg?alt=media&token=d33e4d72-c7ac-4f23-8c42-10bd59e1fd84" alt="yt" height= "40"/>
-              <img src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22" alt="Ln" height="40" />
+              <a target="_blank" href="">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e"
+                  alt="fb"
+                  height="40"
+                />
+              </a>
+              <a target="_blank" href="">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b"
+                  alt="IG"
+                  height="40"
+                />
+              </a>
+              <a target="_blank" href="">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960"
+                  alt="GH"
+                  height="40"
+                />
+              </a>
+              <a target="_blank" href="">
+                {" "}
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ficons8-youtube.svg?alt=media&token=d33e4d72-c7ac-4f23-8c42-10bd59e1fd84"
+                  alt="yt"
+                  height="40"
+                />
+              </a>
+              <a target="_blank" href="">
+                {" "}
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22"
+                  alt="Ln"
+                  height="40"
+                />
+              </a>
             </div>
 
             {/* <div className="g-circles"></div>
@@ -253,16 +348,21 @@ function Home() {
         <div className="project-card-container">
           {projects.map((project, index) => {
             return (
-              <div key={index} className="project-card">
+              <a
+                target="_blank"
+                href={project.projectLink}
+                key={index}
+                className="project-card"
+              >
                 <div className="banner-image">
-                  {/* <img src={project.imageUrl} alt=""/> */}
+                  <img src={project.imageUrl} alt="" />
                 </div>
                 <p>{project.name}</p>
                 <div className="card-footer">
                   <p className="project-domain">{project.domain}</p>
                   <p>{project.status}</p>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
@@ -283,8 +383,8 @@ function Home() {
         <div className="all-posts-container">
           {posts.map((post, index) => {
             const [visited, setVisited] = React.useState(1);
-            function clickedReadMore(){
-              setVisited(!visited)
+            function clickedReadMore() {
+              setVisited(!visited);
             }
             return (
               <div className="post" key={index}>
@@ -294,16 +394,17 @@ function Home() {
                   </div>
                 </div>
                 <div className="post-content">
-                  {(post.caption.length > max_length && Boolean(visited)) ?
-                    (
-                      <div>
-                        {`${post.caption.substring(0, max_length)}...`}<button onClick={clickedReadMore}>Read more</button>
-                      </div>
-                    ) :
+                  {post.caption.length > max_length && Boolean(visited) ? (
+                    <div>
+                      {`${post.caption.substring(0, max_length)}...`}
+                      <button onClick={clickedReadMore}>Read more</button>
+                    </div>
+                  ) : (
                     <p>
-                      {post.caption}<button onClick={clickedReadMore}>Show less</button>
+                      {post.caption}
+                      <button onClick={clickedReadMore}>Show less</button>
                     </p>
-                  }
+                  )}
                   {/* {post.caption} */}
                 </div>
               </div>
@@ -312,36 +413,36 @@ function Home() {
         </div>
       </div>
       <div className="home-faq-container">
-      <div className="home-faq">
-        <div className="home-input-form-container">
-          <div className="input-form-circle-home">
-            {theme=="light" ?
-            (<img src={questionmark} alt="?" className="questionmark" />):
-            (<img src={lightQuestionmark} alt="" className="questionmark"/>)
-          }
-          </div>
-          <div className="home-inputform">
-            <InputForm />
-          </div>
+        <div className="project-heading">
+          <p>FAQs</p>
+          <div className="gh-circles"></div>
+          <div className="ph-circles"></div>
+          <div className="bh-circles"></div>
         </div>
-        <div className="home-inputForm-Accordion">
-          <div className="project-heading">
-            <p>FAQs</p>
-            <div className="gh-circles"></div>
-            <div className="ph-circles"></div>
-            <div className="bh-circles"></div>
+        <div className="home-faq">
+          <div className="home-input-form-container">
+            <div className="input-form-circle-home">
+              {theme == "light" ? (
+                <img src={questionmark} alt="?" className="questionmark" />
+              ) : (
+                <img src={lightQuestionmark} alt="" className="questionmark" />
+              )}
+            </div>
+            <div className="home-inputform">
+              <InputForm />
+            </div>
           </div>
-          <div className="home-accordion">
-            <div className="accordion">
-              {accordionData.map(({ title, content }) => (
-                <Accordion title={title} content={content} />
-              ))}
-              {/* <input type="text" placeholder="Ask your Query Related To DSC" className="quesryInputGdsc" /> */}
+          <div className="home-inputForm-Accordion">
+            <div className="home-accordion">
+              <div className="accordion">
+                {accordionData.map(({ title, content }) => (
+                  <Accordion title={title} content={content} />
+                ))}
+                {/* <input type="text" placeholder="Ask your Query Related To DSC" className="quesryInputGdsc" /> */}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
       </div>
       <div className="globe-container">
         {/* {Globe({ configOptions })(<domElement />)} */}

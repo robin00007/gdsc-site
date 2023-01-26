@@ -31,8 +31,8 @@ export default function CustomGlobe({ globeConfig }) {
 
   useEffect(() => {
     const countryLocation = {
-      lat: selectedCountry.lat,
-      lng: selectedCountry.lng,
+      lat: 7.48884,
+      lng: 80.975391,
       altitude: 1.5,
     };
 
