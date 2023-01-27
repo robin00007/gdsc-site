@@ -30,7 +30,7 @@ export default function Navbar(props) {
   const [activeLink, setActiveLink] = useState("/");
   useEffect(() => {
     setActiveLink(location.pathname);
-  }, [setActiveLink]);
+  }, [location.pathname]);
 
   return (
     <div>
@@ -180,16 +180,16 @@ export default function Navbar(props) {
               </button>
             </div>
           )}
-          {
-            !showIcons && (<button
+          {!showIcons && (
+            <button
               className="NavButtonIcon"
               onClick={() => {
                 setShowIcons(!showIcons);
               }}
             >
               <img src={uparrow} alt="" height="40px" width="20px" />
-            </button>)
-          }
+            </button>
+          )}
           <button
             className="NavButtonIcon"
             onClick={() => {
