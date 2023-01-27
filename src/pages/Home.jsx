@@ -197,16 +197,14 @@ function Home() {
   ]);
 
   const myGlobe = Globe();
-  // myGlobe(myDOMElement).globeImageUrl(myImageUrl).pointsData(myData);
-
   const cards = data.map((item, index) => {
     return <Homes {...item} key={index} />;
   });
   const links = {
-    instagram: "#",
-    facebook: "#",
-    github: "#",
-    linkedIn: "#",
+    instagram: "https://www.instagram.com/gdsc_aitpune/",
+    facebook: "https://www.facebook.com/dsc.aitpune/",
+    github: "https://github.com/DSC-AIT-Pune",
+    linkedIn: "https://in.linkedin.com/company/gdsc-aitpune",
   };
 
   return (
@@ -238,45 +236,28 @@ function Home() {
               </a>
             </div>
             <div className="social-linked">
-              {/* <a target="_blank" href={links.facebook}>
-                <img src={facebook} alt="link" />
-              </a>
-              <a target="_blank" href={links.linkedIn}>
-                <img src={linkedIn} alt="link" />
-              </a>
-              <a target="_blank" href={links.github}>
-                <img src={github} alt="link" />
-              </a>
-              <a target="_blank" href={links.instagram}>
-                <img src={instagram} alt="link" />
-              </a> */}
-              {/* className="Home-instagram" */}
-              {/* <Facebook className="Home-facebook" height="40" />
-              <Instagram className="Home-instagram" height="40" />
-              <Github className="Home-github" fill="transparent" height="40" />
-              <LinkedIn className="Home-linkedIn" height="40" /> */}
-              <a target="_blank" href="">
+              <a target="_blank" href="https://www.facebook.com/dsc.aitpune/">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ffacebook.svg?alt=media&token=a4972ea9-991d-4047-b0df-7a132d64d00e"
                   alt="fb"
                   height="40"
                 />
               </a>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://www.instagram.com/gdsc_aitpune/">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Finstagram.svg?alt=media&token=fdc20d42-99d1-4a27-9674-61ff35703c8b"
                   alt="IG"
                   height="40"
                 />
               </a>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://github.com/DSC-AIT-Pune">
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Fgithub.svg?alt=media&token=1553097d-33d0-4fa2-a898-ab55ecc86960"
                   alt="GH"
                   height="40"
                 />
               </a>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://www.youtube.com/channel/UCjw9RT5WEKOWSob1f4oiqdQ">
                 {" "}
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Ficons8-youtube.svg?alt=media&token=d33e4d72-c7ac-4f23-8c42-10bd59e1fd84"
@@ -284,7 +265,7 @@ function Home() {
                   height="40"
                 />
               </a>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://in.linkedin.com/company/gdsc-aitpune">
                 {" "}
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/theanton-resume.appspot.com/o/gdsc%2Flinkedin.svg?alt=media&token=d6134ca9-6f46-4ee8-b9c5-568eccbc4a22"
@@ -294,17 +275,11 @@ function Home() {
               </a>
             </div>
 
-            {/* <div className="g-circles"></div>
-            <div className="p-circles"></div>
-            <div className="b-circles"></div> */}
           </div>
           <div className="heroSvg">
-            {/* <GoogleLogo /> */}
-            {/* <img src={heroSvg} alt="" /> */}
             <lottie-player
               src="https://assets1.lottiefiles.com/packages/lf20_pepphvu9.json"
               background="transparent"
-              // background="yellow"
               speed="1"
               style={{
                 // zIndex: "2",
@@ -319,8 +294,6 @@ function Home() {
             ></lottie-player>
           </div>
         </div>
-
-        {/* <img className="rocketCloudImg" src={rocketCloud} /> */}
       </div>
 
       <div className="technology">

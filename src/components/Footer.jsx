@@ -6,10 +6,10 @@ import linkedIn from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 export default function Footer(props) {
   const links = {
-    instagram: "#",
-    facebook: "#",
-    github: "#",
-    linkedIn: "#",
+    instagram: "https://www.instagram.com/gdsc_aitpune/",
+    facebook: "https://www.facebook.com/dsc.aitpune/",
+    github: "https://github.com/DSC-AIT-Pune",
+    linkedIn: "https://in.linkedin.com/company/gdsc-aitpune",
   };
   return (
     <div
