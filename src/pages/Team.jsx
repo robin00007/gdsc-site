@@ -4,6 +4,7 @@ import "../styles/Team.css"
 import Banner from "../components/Banner";
 import Teammembers from "../data/Teammembers";
 import TeamGrids from "../components/TeamGrids";
+import Freshers from "../data/Freshers";
 
 class Team extends React.Component {
 
@@ -40,6 +41,32 @@ class Team extends React.Component {
               />
             );
           })}
+        </section>
+        <div>
+          <div className="OurTeamHeadingmobile">
+            <span style={{ fontSize: "6vh", fontWeight: "bold" }}>{"Fresher Members"}</span>
+          </div>
+          <div className="yearTimeline" >
+            <div><span className="timelineItems">{"2021"}</span></div>
+            <div><span className="timelineItems">{"Alumni"}</span></div>
+          </div>
+        </div>
+        <section className="member">
+          {Freshers.map((member, ind) => {
+            return (
+              <TeamGrids
+                key={ind}
+                name={member.name}
+                position={member.position}
+                img={member.image_url}
+                gh={member.social_profiles.gitHub}
+                ig={member.social_profiles.instagram}
+                fb={member.social_profiles.facebook}
+                ln={member.social_profiles.linkedIn}
+              />
+            )
+          })
+          }
         </section>
       </div>
     )

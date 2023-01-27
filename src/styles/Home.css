@@ -690,6 +690,8 @@
   flex-wrap: wrap;
   /* min-width: 40%; */
   /* align-items: center; */
+  margin-left: 5px;
+
 }
 
 /* #dark .home-inputForm-Accordion{
@@ -724,6 +726,7 @@
   /* background-color: red; */
   border-radius: 10px;
   position: relative;
+  margin-right: 5px;
   /* background-color: rgb(235, 235, 235); */
 }
 
@@ -855,6 +858,7 @@
 
   .button-container {
     flex-direction: column;
+    /* width: 100%; */
   }
 
   .project-card-container {
