@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../styles/components/InputForm.css"
 import inputformimage from "../assets/inputFormImage.svg"
+import ideaicon from '../assets/idea-icon.svg'
 import emailjs from "emailjs-com";
 function InputForm() {
     function sendEmail(e) {
@@ -9,15 +10,17 @@ function InputForm() {
             {
                 console.log(res);
             }).catch(err=> console.log(err));
+            alert('message sent');
     }
     return (
         <>
             <form className='home-input-form' onSubmit={sendEmail}>
+                <div className='project-submission'>Submit Your Project Ideas</div>
                 <input type="text" placeholder="Enter your name" name="name" className='home-input-form-name' />
                 <input type="email" placeholder='Enter your email' name='userEmail' className='home-input-form-name'/>
                 <input type="text" placeholder="Your Query" name='message' className='home-input-form-message' />
                 <div className='home-bottom-input-form'>
-                    {/* <img src={inputformimage} alt="mailus" className='input-form-image' /> */}
+                    <img src={ideaicon} alt="mailus" className='input-form-image' />
                     <button className="button-home-input-form" type='submit' value="Send">
                         submit
                     </button>
