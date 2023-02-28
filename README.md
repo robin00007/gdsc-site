@@ -1,1 +1,23 @@
 # gdsc-site
+
+# GDSC-AIT_Members
+![img3](https://user-images.githubusercontent.com/92615235/190987724-dbafa198-7a72-4569-b9c2-b12b5d394716.png)
+![img4](https://user-images.githubusercontent.com/92615235/190987729-b15aa43e-179e-41a1-b392-a71de5ca4c7c.png)
+![img6](https://user-images.githubusercontent.com/92615235/190987740-4cb7dca2-5da0-4d47-b556-4c0e524d5909.png)
+![img7](https://user-images.githubusercontent.com/92615235/190987753-f685d8e5-2f96-42cc-94e3-c616f5379704.png)
+![img8](https://user-images.githubusercontent.com/92615235/190987758-9810e3a2-1b2e-41c8-948c-d6333a42f986.png)
+![img9](https://user-images.githubusercontent.com/92615235/190987763-45f495f3-8d7c-494a-adf7-e91dd050f707.png)
+![img10](https://user-images.githubusercontent.com/92615235/190987784-7ed2ee0a-d395-41c3-8093-340cd0170293.png)
+![img11](https://user-images.githubusercontent.com/92615235/190987798-a0359d79-94d7-48d7-b05c-dc817dbbdeda.png)
+![img12](https://user-images.githubusercontent.com/92615235/190987805-71c60b59-abf0-4907-a8c7-02cf8a33053e.png)
+![img1](https://user-images.githubusercontent.com/92615235/190987831-8ceb0066-c07c-4f88-ab37-b176db6c17c0.png)
+![img2](https://user-images.githubusercontent.com/92615235/190989767-9193ed29-5188-4cf6-bf93-48b7d779764b.png)
+![img5](https://user-images.githubusercontent.com/92615235/190989954-3116aa22-9066-4b92-85e1-f8e17465c613.png)
+![aditya](https://user-images.githubusercontent.com/92615235/215019820-41fbb1d0-0ebf-433b-a9cc-2a17af0422ef.jpg)
+![gourav](https://user-images.githubusercontent.com/92615235/215019928-ff612c00-0ecb-418e-9bd9-ace0432095cf.jpg)
+![sahil](https://user-images.githubusercontent.com/92615235/215019939-ea5b6903-7c52-4d4e-a772-93ecf786be25.jpg)
+![ankit](https://user-images.githubusercontent.com/92615235/215019956-9f2b3435-35fd-40e4-8780-575703946686.jpg)
+![satyjit](https://user-images.githubusercontent.com/92615235/215019965-1d73b678-1d6a-4b01-bac8-922d74c5395b.jpg)
+![sachin](https://user-images.githubusercontent.com/92615235/215019972-ccb02098-5632-453a-99a3-9dcda1904e69.jpg)
+![nidhi](https://user-images.githubusercontent.com/92615235/215079273-f64c21bd-8769-4133-9d31-db88e5afde3e.jpg)
+![varsha](https://user-images.githubusercontent.com/92615235/215079287-e46dfbcc-6e4f-4a9b-a2f4-bbae782647fb.jpg)

@@ -15,6 +15,10 @@ class ExpandedLayout extends Component {
       this.align = "right";
     }
   }
+  handleClick = () => {
+    window.location.href = this.props.url;
+    // console.log(this.props.url);
+  }
 
   render() {
     return (
@@ -59,7 +63,7 @@ class ExpandedLayout extends Component {
             <span>{this.props.text}</span>
           </div>
           <div className="programs-contentBottom">
-            <Button text={"Know More"} url={this.props.url}></Button>
+            <button onClick={this.handleClick} url={this.props.url} >Know More</button>
           </div>
         </Grid>
       </Grid>

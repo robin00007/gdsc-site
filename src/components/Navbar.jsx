@@ -6,21 +6,35 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 // tab/mobile Navbar
 import Home from "../assets/navbar/Default.png";
-import Team from "../assets/navbar/Team.svg";
-import Homes from "../assets/navbar/Homes.svg";
-import Achievements from "../assets/navbar/Achievements.svg";
-import Events from "../assets/navbar/Events.svg";
-import Project from "../assets/navbar/Project.svg";
+// import Team from "../assets/navbar/Team.svg";
+// import Homes from "../assets/navbar/Homes.svg";
+// import Achievements from "../assets/navbar/Achievements.svg";
+// import Events from "../assets/navbar/Events.svg";
+// import Project from "../assets/navbar/Project.svg";
 import downarrow from "../assets/navbar/downarrow.svg";
 import uparrow from "../assets/navbar/uparrow.svg";
 import "../styles/components/MobileNavbar.css";
 // dark mobile navbar
-import DarkAchievements from "../assets/navbar/DarkAchievements.svg";
-import DarkEvents from "../assets/navbar/DarkEvents.svg";
-import DarkHomes from "../assets/navbar/DarkHome.svg";
-import DarkProject from "../assets/navbar/DarkProject.svg";
-import DarkTeam from "../assets/navbar/DarkTeam.svg";
+// import DarkAchievements from "../assets/navbar/DarkAchievements.svg";
+// import DarkEvents from "../assets/navbar/DarkEvents.svg";
+// import DarkHomes from "../assets/navbar/DarkHome.svg";
+// import DarkProject from "../assets/navbar/DarkProject.svg";
+// import DarkTeam from "../assets/navbar/DarkTeam.svg";
 import DarkDefault from "../assets/navbar/DarkDefault.svg";
+// navbar icon in png 
+import DarkTeam from "../assets/navbarInPng/DarkTeam.png";
+import Team from "../assets/navbarInPng/Team.png";
+import Project from "../assets/navbarInPng/Project.png";
+import DarkProject from "../assets/navbarInPng/DarkProject.png";
+import Homes from "../assets/navbarInPng/Homes.png";
+import DarkHomes from "../assets/navbarInPng/DarkHomes.png";
+import Achievements from "../assets/navbarInPng/Achievements.png";
+import DarkAchievements from "../assets/navbarInPng/DarkAchievements.png";
+import Events from "../assets/navbarInPng/Events.png";
+import DarkEvents from "../assets/navbarInPng/DarkEvents.png";
+
+
+
 export default function Navbar(props) {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1000px)",
